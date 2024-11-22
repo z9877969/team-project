@@ -6,8 +6,7 @@
   align-items: center;
   border-radius: 16px;
   padding: 8px 48px;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin: 0 auto 50px auto;
   background-color: rgb(249, 246, 243);
   margin-bottom: 50px;
 }
@@ -34,5 +33,19 @@
 
 .nav-link:hover,
 .nav-link:focus {
-  color: $_header_accent_color;
+  border: 0.5px solid;
+  border-color: #085e84;
+  border-radius: 4px;
+  padding: 4px 8px;
+  width: 60px;
+  height: 32px;
+}
+.nav-link:active {
+  border: 0.5px solid;
+  border-color: #085e84;
+  border-radius: 4px;
+  padding: 4px 8px;
+  width: 60px;
+  height: 32px;
+  background-color: #e0f3fe;
 }

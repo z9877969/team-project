@@ -11,14 +11,19 @@
   margin-left: auto;
   margin-right: auto;
 }
-.hero-title {
-  max-width: 431px;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 100%;
-  text-align: center;
-  background: linear-gradient(180deg, #fff 0%, #e0f3fe 100%);
-  background-clip: text;
+.hero-text {
+  align-content: center;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 24px;
+}
+.download {
+  display: flex;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 64px;
+  gap: 48px;
+  justify-content: center;
+  align-items: center;
 }
