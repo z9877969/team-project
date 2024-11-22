@@ -1,0 +1,29 @@
+.hero-sec {
+  display: flex;
+  flex-direction: column;
+  margin-top: 104px;
+}
+
+.hero-image {
+  width: 598px;
+  height: 242px;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-text {
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 24px;
+}
+.download {
+  display: flex;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 64px;
+  gap: 48px;
+  justify-content: center;
+  align-items: center;
+}
