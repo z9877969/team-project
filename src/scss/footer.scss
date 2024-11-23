@@ -1,28 +1,48 @@
 .footer {
-  background-color: #f5fbff; /* Світлий фон футера */
-  padding: 16px 32px;
-  text-align: center; /* Вирівнювання по центру */
-  font-size: 14px; /* Розмір тексту */
-  color: #000; /* Колір тексту */
+  width: 1200px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 48px;
+  margin: 0 auto 0px auto;
+  background-color: rgb(249, 246, 243);
+}
+
+.header-logo {
+  max-width: 68px;
+  height: auto;
 }
 
 .footer-content {
   display: flex;
-  flex-direction: column;
+  text-align: center;
   align-items: center;
-  gap: 8px;
+  gap: 50px;
 }
 
-.footer a {
-  color: #000;
+.footer-content span {
+  color: #555;
+}
+
+.footer-content a {
   text-decoration: none;
+  color: #0073e6;
 }
 
-.footer a:hover {
+.footer-content a:hover {
   text-decoration: underline;
 }
 
 .footer-links {
-  display: flex;
-  gap: 16px;
+}
+
+.footer-links a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }

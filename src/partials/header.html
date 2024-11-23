@@ -1,11 +1,5 @@
 <header class="header">
-  <img
-    class="header-logo"
-    src="../img/logo-s.png"
-    alt="logo"
-    width="68"
-    height="48"
-  />
+  <img class="header-logo" src="../img/logo-s.png" alt="logo" />
   <nav class="nav">
     <ul class="nav-list">
       <li class="nav-item">
@@ -29,4 +23,39 @@
       </li>
     </ul>
   </nav>
+  <button type="button" class="menu-btn js-open-menu">
+            <svg class="open-btn" width="34" height="34">
+                <use href="../img/img-mobile/burger.svg">
+                </use>
+            </svg>
+        </button>
+    </div>
+  <!---mob-menu-->
+  <div class="mobile-menu js-menu-container">
+    <button type="button" class="modal-close-btn js-close-menu">
+      <svg class="modal-icon" width="34" height="34">
+        <use href="./img/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <ul class="mob-nav-menu">
+      <li>
+        <a href="./index.html" class="mob-nav-menu-item mob-current">Home</a>
+      </li>
+      <li>
+        <a href="#" class="mob-nav-menu-item mob-current">Game Description</a>
+      </li>
+      <li>
+        <a href="#" class="mob-nav-menu-item mob-current">Features</a>
+      </li>
+      <li>
+        <a href="#" class="mob-nav-menu-item mob-current">How to Play</a>
+      </li>
+      <li>
+        <a href="#" class="mob-nav-menu-item mob-current">FAQ</a>
+      </li>
+      <li>
+        <a href="#" class="mob-nav-menu-item mob-current">Gallery</a>
+      </li>
+    </ul>
+  </div>
 </header>

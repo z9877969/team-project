@@ -1,12 +1,13 @@
-<hero class="hero-sec">
+<section class="hero-sec">
   <div class="hero-sec-items">
-    <img
-      class="hero-image"
-      src="../img/Logo-hero.png"
-      alt="logo"
-      width="68"
-      height="48"
-    />
+    <picture>
+      <source srcset="src/img/Logo-hero.png 2x" media="(min-width: 767px)" />
+      <source
+        srcset="src\img\img-mobile\Logo-mob.png"
+        media="(min-width: 320px)"
+      />
+      <img src="../img/Logo-hero.png" alt="Logo-hero" />
+    </picture>
     <img
       class="hero-text"
       src="../img/hero-text.png"
@@ -34,7 +35,7 @@
       </a>
     </div>
   </div>
-</hero>
+</section>
 <section class="description">
   <div class="descr-block">
     <img
