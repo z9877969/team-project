@@ -1,0 +1,28 @@
+.footer {
+  background-color: #f5fbff; /* Світлий фон футера */
+  padding: 16px 32px;
+  text-align: center; /* Вирівнювання по центру */
+  font-size: 14px; /* Розмір тексту */
+  color: #000; /* Колір тексту */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+}
