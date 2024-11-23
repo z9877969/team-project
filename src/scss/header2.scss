@@ -1,0 +1,69 @@
+.header {
+  width: 320px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #f0faff;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.logo-header {
+  width: 48px;
+  height: 33px;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 70px;
+  background-color: #046fa0;
+  border-radius: 16px;
+  padding: 24px 16px;
+  width: 177px;
+  height: 320px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  z-index: 999;
+}
+
+.mobile-menu.is-open {
+  display: flex; /* Відображаємо меню */
+}
+
+.mob-nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.mob-nav-menu-item {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: color 0.3s ease;
+}
+
+.mob-nav-menu-item:hover {
+  color: #f0faff; /* Зміна кольору при наведенні */
+}
