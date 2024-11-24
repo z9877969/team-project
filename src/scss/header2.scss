@@ -6,8 +6,11 @@
   align-items: center;
   border-radius: 16px;
   background-color: #f0faff;
+  margin: 0 auto 50px auto;
 }
-
+.nav-list {
+  display: none;
+}
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -43,7 +46,7 @@
 }
 
 .mobile-menu.is-open {
-  display: flex; /* Відображаємо меню */
+  display: flex;
 }
 
 .mob-nav-menu {
@@ -65,5 +68,52 @@
 }
 
 .mob-nav-menu-item:hover {
-  color: #f0faff; /* Зміна кольору при наведенні */
+  color: #f0faff;
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    width: 1080px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    padding: 8px 48px;
+    margin: 0 auto 50px auto;
+    background-color: rgb(249, 246, 243);
+  }
+  .menu-btn {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 auto;
+    margin: 0 auto;
+    color: black;
+    gap: 24px;
+  }
+  .nav-link {
+    padding: 4px;
+    margin: 0 auto;
+  }
+  .nav-link:hover,
+  .nav-link:focus {
+    border: 0.5px solid;
+    border-color: #085e84;
+    border-radius: 4px;
+    width: 60px;
+    height: 32px;
+    padding: 0 auto;
+  }
+  .nav-link:active {
+    border: 0.5px solid;
+    border-color: #085e84;
+    border-radius: 4px;
+    padding: 4px 8px;
+    width: 60px;
+    height: 32px;
+    background-color: #e0f3fe;
+  }
 }
