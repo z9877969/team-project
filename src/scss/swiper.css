@@ -51,7 +51,8 @@
         .swiper-slide {
             
             border-radius: 15px;
-            width: 100% !important; /* Принудительная ширина */
+            width: 100%;
+            overflow: hidden;
         }
 
         .slide-content {
@@ -61,12 +62,14 @@
             height: 280px; 
             background-image: url('./img/bg_p4.png');
             background-size: cover;
+            overflow: hidden;
         }
 
         .main-image {
             width: 100%;
             height: 100%;
             position: relative;
+            overflow: hidden;
         }
 
         .main-image img {
@@ -74,6 +77,7 @@
             height: 189px;
             object-fit: cover;
             border-radius: 10px;
+            overflow: hidden;
         }
 
         .secondary-image {
@@ -175,9 +179,30 @@
         .mySwiper1,
         .mySwiper2,
         .mySwiper3 {
-            padding-left: 16px;  /* Добавляем одинаковый отступ слева */
-            padding-right: 16px; /* Для симметрии добавляем и справа */
+            padding-left: 16px;  
+            padding-right: 16px;  
+            overflow: hidden;
         }
+
+        .accordion {
+            padding: 16px;
+        }
+
+        .accordion-item {
+            max-width: 288px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #083249;
+            border-radius: 24px;
+            
+        }
+
+        .accordion-item p {
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+
 
 
 /* =================================== media 1200=============================================== */
@@ -247,6 +272,11 @@
                 position: relative;
                 padding-bottom: 80px;
             }
+
+                .mySwiper1, .mySwiper2, .mySwiper3 .swiper-slide {
+                width: calc((100% - 60px) / 3)
+            }
+        
         }
 
 
@@ -419,6 +449,8 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
+
+
         /* Для десктопной версии */
         @media (min-width: 1200px) {
            
@@ -479,7 +511,7 @@
             .mySwiper1,
             .mySwiper2,
             .mySwiper3 {
-                padding-left: 40px;  /* Увеличиваем отступ для десктопной версии */
+                padding-left: 40px;  
                 padding-right: 40px;
             }
         }
@@ -566,7 +598,7 @@
             }
 
             .swiper-slide {
-                width: calc((100% - 60px) / 3) !important; /* Ширина для 3 слайдов */
+                width: calc((100% - 60px) / 3)
             }
         }
 
@@ -713,10 +745,10 @@
             margin-top: 20px;
         }
 
-        /* Медиа запрос для десктопной версии */
+    
         @media (min-width: 1200px) {
-            .mySwiper3 .swiper-slide {
-                width: calc((100% - 60px) / 3) !important;
+          .mySwiper1, .mySwiper2, .mySwiper3 .swiper-slide {
+                width: calc((100% - 60px) / 3)
             }
         }
 
