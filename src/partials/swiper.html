@@ -6,11 +6,12 @@
     <title>How to Play</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="./scss/swiper.css">
+    
 </head>
 
 <body>
 
-    <section class="features container">
+    <section class="features container" id="features">
           <div class="faq-banner" style="position: relative; text-align: center;">
                 <picture>
                     <source media="(max-width: 320px)" srcset="./img/swiperImg/mobile/flags/vector_green.png">
@@ -86,16 +87,27 @@
 
             <div class="navigation-container">
                 <div class="custom-navigation features-nav">
-                    <button class="nav-prev features-prev">←</button>
-                    <button class="nav-next features-next">→</button>
+                    <button class="nav-prev features-prev">
+                        <svg class="icon-chevron">
+                            <use href="./img/sprite.svg#icon-left_chevron"></use>
+                        </svg>
+                    </button>
+                    <button class="nav-next features-next">
+                        <svg class="icon-chevron">
+                            <use href="./img/sprite.svg#icon-right_chevron"></use>
+                        </svg>
+                    </button>
                 </div>
+
+
+                
                 <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
 
 
-    <section class="howtoplay container">
+    <section class="howtoplay container" id="howtoplay">
 
 
         <img class="bg-p4" src="./img/wave_transition_p3 (1).png" alt="bg">
@@ -245,12 +257,20 @@
                         </div>
                     </div>
                 </div>
-                <!-- Дополнительные слайды -->
+                
             </div>
             <div class="navigation-container">
                 <div class="custom-navigation howtoplay-nav">
-                    <button class="nav-prev howtoplay-prev">←</button>
-                    <button class="nav-next howtoplay-next">→</button>
+                    <button class="nav-prev howtoplay-prev">
+                        <svg class="icon-chevron">
+                            <use href="./img/sprite.svg#icon-left_chevron"></use>
+                        </svg>
+                    </button>
+                    <button class="nav-next howtoplay-next">
+                        <svg class="icon-chevron">
+                            <use href="./img/sprite.svg#icon-right_chevron"></use>
+                        </svg>
+                    </button>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -258,7 +278,7 @@
     </section>
 
 
-        <section class="faq container">
+        <section class="faq container" id="faq">
             <img class="" src="./img/wave_transition_p3 (1).png" alt="bg">
 
             <div class="faq-banner" style="position: relative; text-align: center;">
@@ -274,7 +294,11 @@
                 <div class="accordion-item">
                     <div class="accordion-header" id="headingOne">
                         <h3>Is Merge Cove free to play?</h3>
-                        <span class="chevron">▼</span>
+                        <span class="chevron">
+                            <svg class="icon-chevron">
+                                <use href="./img/sprite.svg#icon-down_chevron"></use>
+                            </svg>
+                        </span>
                     </div>
                     <div class="accordion-content" id="collapseOne" style="display: none;">
                         <p>Start with simple elements on your cove.</p>
@@ -283,7 +307,11 @@
                 <div class="accordion-item">
                     <div class="accordion-header" id="headingTwo">
                         <h3>Can I play without an internet connection?</h3>
-                        <span class="chevron">▼</span>
+                        <span class="chevron">
+                            <svg class="icon-chevron">
+                                <use href="./img/sprite.svg#icon-down_chevron"></use>
+                            </svg>
+                        </span>
                     </div>
                     <div class="accordion-content" id="collapseTwo" style="display: none;">
                         <p>Open the game and start merging.</p>
@@ -292,7 +320,10 @@
                 <div class="accordion-item">
                     <div class="accordion-header" id="headingThree">
                         <h3>What age is the game suitable for?</h3>
-                        <span class="chevron">▼</span>
+                        <span class="chevron"></span>
+                            <svg class="icon-chevron">
+                                <use href="./img/sprite.svg#icon-down_chevron"></use>
+                            </svg>
                     </div>
                     <div class="accordion-content" id="collapseThree" style="display: none;">
                         <p>The game is suitable for all ages.</p>
@@ -301,7 +332,10 @@
                 <div class="accordion-item">
                     <div class="accordion-header" id="headingFour">
                         <h3>How do I earn more coins?</h3>
-                        <span class="chevron">▼</span>
+                        <span class="chevron">
+                            <svg class="icon-chevron">
+                                <use href="./img/sprite.svg#icon-down_chevron"></use>
+                            </svg>
                     </div>
                     <div class="accordion-content" id="collapseFour" style="display: none;">
                         <p>You can earn coins by merging items.</p>
@@ -310,7 +344,10 @@
                 <div class="accordion-item">
                     <div class="accordion-header" id="headingFive">
                         <h3>Are there updates with new content?</h3>
-                        <span>▼</span>
+                        <span class="chevron">
+                            <svg class="icon-chevron">
+                                <use href="./img/sprite.svg#icon-down_chevron"></use>
+                            </svg>
                     </div>
                     <div class="accordion-content" id="collapseFive" style="display: none;">
                         <p>Yes, we regularly update the game with new content.</p>
@@ -324,7 +361,7 @@
             </div>
          </section>
 
-         <section class="gallery container">
+         <section class="gallery container" id="gallery">
 
            <div class="faq-banner" style="position: relative; text-align: center;">
                <picture>
@@ -379,8 +416,16 @@
 
 <div class="custom-navigation gallery-nav">
      <div class="custom-navigation">
-            <button class="nav-prev gallery-prev">←</button>
-            <button class="nav-next gallery-next">→</button>
+            <button class="nav-prev gallery-prev">
+                <svg class="icon-chevron">
+                    <use href="./img/sprite.svg#icon-left_chevron"></use>
+                </svg>
+            </button>
+            <button class="nav-next gallery-next">
+                <svg class="icon-chevron">
+                    <use href="./img/sprite.svg#icon-right_chevron"></use>
+                </svg>
+            </button>
         </div>
 </div>
 

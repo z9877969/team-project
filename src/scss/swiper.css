@@ -43,8 +43,13 @@
     transform: translateX(-50%);
 } */
         .swiper {
-            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
             overflow: hidden;
+            list-style: none;
+            padding: 0;
+            z-index: 1;
             margin-top: 100px;
         }
 
@@ -148,19 +153,24 @@
         }
 
         .nav-prev,
-        .nav-next {
-            width: 40px;
-            height: 40px;
-            background: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #666;
-        }
+.nav-next {
+    width: 40px;
+    height: 40px;
+    background: transparent; 
+    border: solid 1px #083249;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; 
+}
+
+.nav-prev:hover,
+.nav-next:hover {
+    background-color: #BBE9FC; 
+}
+
 
          .faq-text {
             font-family: 'IBM Plex Sans', sans-serif;
@@ -179,9 +189,12 @@
         .mySwiper1,
         .mySwiper2,
         .mySwiper3 {
-            padding-left: 16px;  
-            padding-right: 16px;  
+            width: 100%;
+            height: auto;
+            position: relative;
             overflow: hidden;
+            padding-left: 16px;
+            padding-right: 16px;
         }
 
         .accordion {
@@ -202,6 +215,88 @@
             font-weight: 400;
         }
 
+      .accordion-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px; 
+}
+
+.accordion-header h3 {
+    margin-right: 15px; 
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.icon-chevron {
+    width: 12px;
+    height: 12px;
+    transition: transform 0.3s ease;
+    fill: #083249;
+    display: block;
+}
+
+
+.accordion-item.active {
+    .icon-chevron {
+        transform: rotate(360deg);
+    }
+}
+
+.text-block-features {
+    background-color: #B6FCD0;
+    border-radius: 24px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #0E592E;
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeInUp 0.5s ease forwards;
+    animation-delay: 0.2s; 
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.text-block-features p {
+    font-weight: 400;
+}
+
+.faq-banner {
+    position: relative;
+    text-align: center;
+    opacity: 0; 
+    transform: translateY(30px); 
+    filter: blur(10px); 
+    animation: bannerAppear 0.8s ease forwards;
+}
+
+
+@keyframes bannerAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
 
 
 
@@ -248,10 +343,8 @@
                 justify-content: center;
             }
 
-            .swiper-slide {
-                width: calc((100% - 60px) / 3) !important;
-                margin: 0 10px;
-            }
+              
+           
 
             .custom-navigation {
                 position: absolute;
@@ -273,8 +366,15 @@
                 padding-bottom: 80px;
             }
 
-                .mySwiper1, .mySwiper2, .mySwiper3 .swiper-slide {
-                width: calc((100% - 60px) / 3)
+               .mySwiper1, 
+            .mySwiper2, 
+            .mySwiper3 {  
+                width: 100%; 
+                overflow: visible;
+            }
+
+            .mySwiper3 .swiper-slide {
+                width: calc((100% - 60px) / 3)  
             }
         
         }
@@ -353,7 +453,7 @@
 
         .swiper-pagination-progressbar {
             background: #013216 !important; /* Цвет неактивной части */
-            height: 2px !important; /* Уменьшили высоту с 4px до 2px */
+            height: 2px !important; /* Уменьшили высоту с 4px д�� 2px */
         }
 
         .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
@@ -451,10 +551,7 @@
 
 
 
-        /* Для десктопной версии */
-        @media (min-width: 1200px) {
-           
-        }
+       
 
         .accordion-item.active .accordion-content {
             position: relative;
@@ -554,18 +651,7 @@
             width: 100%; /* Полная ширина для центрирования */
         }
 
-        .nav-prev,
-        .nav-next {
-            width: 40px;
-            height: 40px;
-            background: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+      
 
         /* Десктопная версия */
         @media (min-width: 1200px) {
@@ -597,9 +683,7 @@
                 justify-content: center;
             }
 
-            .swiper-slide {
-                width: calc((100% - 60px) / 3)
-            }
+            
         }
 
         /* Стили для контента слайда */
@@ -654,7 +738,7 @@
         /* Общие стили для слайдера */
         .mySwiper3 {
             width: 100%;
-            overflow: hidden; /* Важно! */
+            
             position: relative;
         }
 
@@ -667,11 +751,7 @@
             flex-shrink: 0; /* Важно! */
         }
 
-        @media (min-width: 1200px) {
-            .mySwiper3 .swiper-slide {
-                width: calc((100% - 60px) / 3) /* Для десктопной версии */
-            }
-        }
+       
 
         /* Стили для контента слайда */
         .slide-content {
@@ -681,7 +761,7 @@
 
         .mySwiper3 {
             width: 100%;
-            overflow: hidden;
+            
             position: relative;
         }
 
@@ -696,7 +776,7 @@
             position: relative;
         }
 
-        /* Стили для слайдера Features */
+      
         .mySwiper3 {
             width: 100%;
             height: auto;
@@ -746,11 +826,8 @@
         }
 
     
-        @media (min-width: 1200px) {
-          .mySwiper1, .mySwiper2, .mySwiper3 .swiper-slide {
-                width: calc((100% - 60px) / 3)
-            }
-        }
+       
+         
 
 
         .text-block-features {
@@ -767,3 +844,11 @@
         .text-block-features p{
             font-weight: 400;
         }
+
+        
+       
+       
+        
+
+        
+      
