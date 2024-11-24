@@ -60,3 +60,8 @@ li:last-child {
 }
 .footer-links {
 }
+@media (min-width: 1200px) {
+  body {
+    width: 1200px;
+  }
+}
