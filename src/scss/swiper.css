@@ -21,13 +21,28 @@
         }
 
         
-.bg-p4 {
-    width: 150%;
-    position: absolute;
-    top: 25%;
-    left: -25%;
-    
+.features {
+    background-image: url('../img/Backgrounds/features-mobile.png');
+    background-size: cover;
 }
+
+.howtoplay {
+    background-image: url('../img/Backgrounds/howtoplay-mobile.png');
+    background-size: cover;
+}
+
+.faq {
+    background-image: url('../img/Backgrounds/faq-mobile.png');
+    background-size: cover;
+}
+
+.gallery {
+    background-image: url('../img/Backgrounds/gallery-mobile.png');
+    background-size: cover;
+}
+
+
+
 
  
 /*         
@@ -65,8 +80,7 @@
             position: relative;
             width: 100%;
             height: 280px; 
-            background-image: url('./img/bg_p4.png');
-            background-size: cover;
+          
             overflow: hidden;
         }
 
@@ -304,16 +318,40 @@
 
 
         @media (min-width: 1200px) {
+
+          .features {
+    background-image: url('../img/Backgrounds/features-desk.png');
+    background-size: cover;
+}
+
+.howtoplay {
+    background-image: url('../img/Backgrounds/howtoplay-desk.png');
+    background-size: cover;
+}
+
+.faq {
+    background-image: url('../img/Backgrounds/faq-desk.png');
+    background-size: cover;
+}
+
+.gallery {
+    background-image: url('../img/Backgrounds/gallery-desk.png');
+    background-size: cover;
+}
+
+.container{
+    min-width: 1200px;
+    padding: 40px;
+}
+
+
+
            .swiper-pagination {
                 width: 200px !important;
                 margin-left: 40px;
             }
 
-            .container {
-                max-width: 1200px;
-                padding: 40px;
-                position: relative;
-            }
+           
 
             .faq-banner {
                 width: 100%;
