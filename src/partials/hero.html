@@ -1,47 +1,51 @@
 <section class="hero-sec">
+  <div class="container">
   <div class="hero-sec-items">
-    <img class="hero-image" src="./img/Logo-hero.png" alt="hero-logo" />
-    <img
-      class="hero-text"
-      src="./img/hero-text.png"
-      alt="Discover,Merge,and_Build_Your_Cove!"
-      width="431"
-      height="96"
-    />
+    <div class="hero-image">
+    <picture>
+      <source media="(max-width: 320px)" srcset="./img/img-mobile/Logo-mob.png">
+      <source media="(min-width: 1200px)" srcset="./img/Logo-hero.png">
+      <img src="./img/Logo-hero.png" alt="Image 4">
+    </picture>
+    </div>
+    <div class="hero-text">
+      <picture>
+        <source media="(max-width: 320px)" srcset="./img/img-mobile/hero-text.png">
+        <source media="(min-width: 1200px)" srcset="./img/hero-text.png">
+        <img src="./img/hero-text.png" alt="herotext">
+      </picture>
+    </div>
     <div class="download">
-      <img
+      <img class="img-download"
         src="./img/download_vector.png"
         alt="download-now"
-        width="346"
-        height="100"
       />
       <a
         href="https://play.google.com/store/apps/details?id=com.newmerges.mergecove"
         target="_blank"
       >
-        <img
+        <img class="img-appstore"
           src="./img/app_store.svg"
-          alt="app-store"
-          width="213"
-          height="63"
-        />
+          alt="app-store"/>
       </a>
     </div>
   </div>
 </section>
-<section class="description">
+<section class="description" id="description-block">
   <div class="descr-block">
-    <img
-      src="./img/title_p2.png"
-      alt="descript-logo"
-      width="1080"
-      height="113"
-    />
-    <img
-      src="./img/Game Description_info.png"
-      alt="game-descript"
-      width="1080"
-      height="346"
-    />
+    <div class="-banner" style="position: relative; text-align: center;">
+    <picture class="flag-blue">
+        <source media="(max-width: 1199px)" srcset="./img/swiperImg/mobile/flags/vector.png">
+        <source media="(min-width: 1200px)" srcset="./img/swiperImg/Desktop/flags/blue.png">
+        <img src="./img/descr-flag.png" alt="blueflag">
+        <div class="descr-text">Game Description</div>
+        </div>
+      </picture>
+      <picture class="descr-game">
+        <source media="(max-width: 1199px)" srcset="./img/img-mobile/game-descr-mob.png">
+        <source media="(min-width: 1200px)" srcset="./img/game-descr.png">
+        <img src="./img/game-descr.png" alt="game-descript"/>
+    </picture>
+  </div>
   </div>
 </section>
