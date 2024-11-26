@@ -65,7 +65,7 @@
             list-style: none;
             padding: 0;
             z-index: 1;
-            margin-top: 100px;
+            
         }
 
         .swiper-slide {
@@ -118,8 +118,8 @@
             height: 85px;
             position: absolute;
            
-            left: 105px;
-            top: 160px;
+            left: 110px;
+            top: 110px;
             z-index: 2;
         }
 
@@ -136,7 +136,7 @@
         .text-block {
            background-color: #FDE6E7;
            border-radius: 24px;
-           padding: 20px;
+           padding: 10px;
            color: #D5294D;
            z-index: 99;
            width: 166px;
@@ -210,6 +210,8 @@
             padding-left: 16px;
             padding-right: 16px;
         }
+
+      
 
         .accordion {
             padding: 16px;
@@ -312,8 +314,14 @@
     }
 }
 
+  .faq-banner {
+                margin-bottom: 15px;
+                margin-top: 45px;
+            }
 
-
+.gallery-banner {
+    margin-bottom: 25px;
+}
 /* =================================== media 1200=============================================== */
 
 
@@ -337,6 +345,7 @@
 .gallery {
     background-image: url('../img/Backgrounds/gallery-desk.png');
     background-size: cover;
+    
 }
 
 .container{
@@ -347,7 +356,7 @@
 
 
            .swiper-pagination {
-                width: 200px !important;
+               
                 margin-left: 40px;
             }
 
@@ -390,31 +399,37 @@
                 bottom: -60px;
                 display: flex;
                 gap: 20px;
+                
             }
 
             .swiper-pagination {
                 position: absolute !important;
-                width: 200px !important;
+                
                 left: 40px !important;
                 bottom: -30px !important;
             }
 
             .swiper-container {
                 position: relative;
-                padding-bottom: 80px;
+                padding-bottom: 0px;
             }
 
                .mySwiper1, 
             .mySwiper2, 
             .mySwiper3 {  
                 width: 100%; 
-                overflow: visible;
+                overflow: hidden;
             }
 
             .mySwiper3 .swiper-slide {
                 width: calc((100% - 60px) / 3)  
             }
         
+        }
+
+        .accordion {
+            justify-content: center;
+            align-items: center;
         }
 
 
@@ -667,7 +682,7 @@
             display: flex;
             flex-direction: column; /* На мобильном - вертикальное расположение */
             align-items: center; /* Центрируем на мобильном */
-            gap: 20px;
+            gap: 10px;
             padding-left: 16px;
             padding-right: 16px;
             margin-top: 20px;
@@ -676,7 +691,7 @@
         /* Стили для прогресс-бара */
         .swiper-pagination {
             position: relative !important;
-            width: 200px !important;
+            
             order: 1; /* На мобильном - сверху */
         }
 
@@ -752,9 +767,7 @@
                 line-height: 24px;
             }
 
-            .faq-banner {
-                margin-bottom: 20px;
-            }
+          
         }
 
         /* Стили для десктопной версии */
