@@ -345,6 +345,7 @@
 .gallery {
     background-image: url('../img/Backgrounds/gallery-desk.png');
     background-size: cover;
+    position: relative;
     
 }
 
@@ -395,8 +396,8 @@
 
             .custom-navigation {
                 position: absolute;
-                left: 40px;
-                bottom: -60px;
+                left: -510px;
+                bottom: 10px;
                 display: flex;
                 gap: 20px;
                 
@@ -405,7 +406,7 @@
             .swiper-pagination {
                 position: absolute !important;
                 
-                left: 40px !important;
+                left: 220px !important;
                 bottom: -30px !important;
             }
 
@@ -674,6 +675,9 @@
         @media (min-width: 1200px) {
             .gallery-nav {
                 padding-left: 40px;
+                position: absolute;
+                top: 240;
+                left: 400;
             }
         }
 
