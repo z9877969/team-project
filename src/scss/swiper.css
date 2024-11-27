@@ -19,22 +19,22 @@ body {
 }
 
 .features {
-    background-image: url('../img/Backgrounds/features-mobile.png');
+    background-image: url('./img/Backgrounds/features-mobile.png');
     background-size: cover;
 }
 
 .howtoplay {
-    background-image: url('../img/Backgrounds/howtoplay-mobile.png');
+    background-image: url('./img/Backgrounds/howtoplay-mobile.png');
     background-size: cover;
 }
 
 .faq {
-  background-image: url('../img/Backgrounds/faq-mobile.png');
+  background-image: url('./img/Backgrounds/faq-mobile.png');
   background-size: cover;
 }
 
 .gallery {
-  background-image: url('../img/Backgrounds/gallery-mobile.png');
+  background-image: url('./img/Backgrounds/gallery-mobile.png');
   background-size: cover;
 }
 
@@ -307,22 +307,22 @@ body {
         @media (min-width: 1200px) {
 
           .features {
-    background-image: url('../img/Backgrounds/features-desk.png');
+    background-image: url('./img/Backgrounds/features-desk.png');
     background-size: cover;
 }
 
 .howtoplay {
-    background-image: url('../img/Backgrounds/howtoplay-desk.png');
+    background-image: url('./img/Backgrounds/howtoplay-desk.png');
     background-size: cover;
 }
 
 .faq {
-    background-image: url('../img/Backgrounds/faq-desk.png');
+    background-image: url('./img/Backgrounds/faq-desk.png');
     background-size: cover;
 }
 
 .gallery {
-    background-image: url('../img/Backgrounds/gallery-desk.png');
+    background-image: url('./img/Backgrounds/gallery-desk.png');
     background-size: cover;
     position: relative;
   }
