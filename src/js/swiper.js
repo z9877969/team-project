@@ -82,11 +82,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Инициализация аккордеона
     const accordionItems = document.querySelectorAll('.accordion-item');
-    
+
     accordionItems.forEach(item => {
         const header = item.querySelector('.accordion-header');
         const content = item.querySelector('.accordion-content');
-        
+
         header.addEventListener('click', () => {
             // Закрываем все другие элементы
             accordionItems.forEach(otherItem => {
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     otherItem.querySelector('.accordion-content').style.display = 'none';
                 }
             });
-            
+
             // Переключаем текущий элемент
             item.classList.toggle('active');
             if (content.style.display === 'none') {
@@ -107,4 +107,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-export default swiper.js
+//export default swiper.js
