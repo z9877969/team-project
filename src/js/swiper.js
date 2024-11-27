@@ -69,13 +69,13 @@ document.addEventListener('DOMContentLoaded', function () {
             type: 'progressbar',
         },
         navigation: {
-            nextEl: '.gallery-next',
-            prevEl: '.gallery-prev',
+            nextEl: '.nav-next',
+            prevEl: '.nav-prev',
         },
         breakpoints: {
             1200: {
-                slidesPerView: 3,
-                spaceBetween: 30,
+                slidesPerView: 2,
+                spaceBetween: 40,
             },
         },
     });
@@ -107,4 +107,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-//export default swiper.js
+//
