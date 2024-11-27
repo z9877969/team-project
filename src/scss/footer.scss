@@ -1,9 +1,6 @@
-.footer {
+/*.footer {
   width: 320px;
   height: 160px;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
   background-color: rgb(249, 246, 243);
 }
 .footer-content {
@@ -11,29 +8,86 @@
   flex-direction: column-reverse;
   text-align: center;
   align-items: center;
+  color: #083249;
 }
 .footer-links {
   display: flex;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 150%;
   text-decoration: underline;
+  padding-bottom: 16px;
+}*/
+/* Загальні стилі футера */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0faff;
+  padding: 20px;
+  text-align: center;
+  width: 320px;
+  height: 160px;
+  margin: 0 auto;
 }
+
+.footer-links {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #083249;
+  margin-top: 8px;
+}
+
+.footer-link {
+  text-decoration: underline;
+  color: #083249;
+  font-size: 13px;
+  transition: color 0.3s ease;
+}
+.footer-link-adress {
+  border-left: 1.65px solid;
+  padding-left: 4px;
+  color: #083249;
+}
+
+.footer-link:hover {
+  color: #023e57;
+}
+
+.footer-copyright {
+  font-size: 13px;
+  color: #083249;
+  margin-bottom: 16px;
+}
+
+.footer-logo img {
+  width: 68px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+
 @media screen and (min-width: 1200px) {
   .footer {
     width: 1200px;
     height: 64px;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     padding: 8px 48px;
     margin: 0 auto 0px auto;
+    color: #083249;
     background-color: rgb(249, 246, 243);
   }
 
-  .header-logo {
-    max-width: 68px;
-    height: auto;
+  .footer-logo img {
+    width: 68px;
+    height: 48px;
+    margin-bottom: 10px;
+    margin-right: 150px;
   }
 
   .footer-content {
@@ -56,16 +110,31 @@
     text-decoration: underline;
   }
 
-  .footer-links {
+  .footer-copyright {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
   }
 
   .footer-links a {
     margin: 0 8px;
-    text-decoration: none;
-    color: #0073e6;
+    text-decoration: underline;
+    color: #083249;
   }
 
   .footer-links a:hover {
     text-decoration: underline;
+  }
+  .footer-link-adress {
+    border-left: 1.65px solid;
+    border-right: 1.65px solid;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: #083249;
+  }
+  .footer-copyright p {
+    padding-left: 4px;
+  }
+  .bord-link {
   }
 }

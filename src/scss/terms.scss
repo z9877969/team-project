@@ -3,6 +3,7 @@ body {
   align-content: center;
   justify-content: center;
   background-color: #0d4e6d;
+  margin: 0 auto;
 }
 .backbutton {
   width: 160px;
@@ -43,25 +44,124 @@ li:last-child {
   margin-bottom: 24px;
 }
 .footer {
-  width: 320px;
-  height: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8px 48px;
-  margin: 0 auto 0px auto;
+  justify-content: center;
   background-color: #f0faff;
+  padding: 20px;
+  text-align: center;
+  width: 320px;
+  height: 160px;
+  margin: 0 auto;
 }
-.header-logo {
-  max-width: 68px;
-  max-height: 44px;
-}
-.footer-content {
-}
+
 .footer-links {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #083249;
+  margin-top: 8px;
 }
-@media (min-width: 1200px) {
+
+.footer-link {
+  text-decoration: underline;
+  color: #083249;
+  font-size: 13px;
+  transition: color 0.3s ease;
+}
+.footer-link-adress {
+  border-left: 1.65px solid;
+  padding-left: 4px;
+  color: #083249;
+}
+
+.footer-link:hover {
+  color: #023e57;
+}
+
+.footer-copyright {
+  font-size: 13px;
+  color: #083249;
+  margin-bottom: 16px;
+}
+
+.footer-logo img {
+  width: 68px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
   body {
     width: 1200px;
+  }
+  .footer {
+    width: 1200px;
+    height: 64px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 48px;
+    margin: 0 auto 0px auto;
+    color: #083249;
+    background-color: rgb(249, 246, 243);
+  }
+
+  .footer-logo img {
+    width: 68px;
+    height: 48px;
+    margin-bottom: 10px;
+    margin-right: 150px;
+  }
+
+  .footer-content {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .footer-content span {
+    color: #555;
+  }
+
+  .footer-content a {
+    text-decoration: none;
+    color: #0073e6;
+  }
+
+  .footer-content a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-copyright {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .footer-links a {
+    margin: 0 8px;
+    text-decoration: underline;
+    color: #083249;
+  }
+
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  .footer-link-adress {
+    border-left: 1.65px solid;
+    border-right: 1.65px solid;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: #083249;
+  }
+  .footer-copyright p {
+    padding-left: 4px;
+  }
+  .bord-link {
   }
 }

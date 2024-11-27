@@ -18,5 +18,9 @@
 <symbol id="icon-menu" viewBox="0 0 32 32">
 <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
 </symbol>
+<symbol id="icon-burger" viewBox="0 0 32 32">
+<path fill="#bbe9fc" style="fill: var(--color1, #bbe9fc)" d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16c-8.837 0-16-7.163-16-16s7.163-16 16-16z"></path>
+<path fill="none" stroke="#083249" style="stroke: var(--color2, #083249)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M6.4 9.6h19.2M6.4 16h19.2M6.4 22.4h19.2"></path>
+</symbol>
 </defs>
 </svg>
