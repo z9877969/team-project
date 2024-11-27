@@ -19,12 +19,19 @@ body {
 }
 
 .features {
-    background-image: url('./img/Backgrounds/features-mobile.png');
-    background-size: cover;
+    background-image: url('./img/Backgrounds/features-mobile.png'), url("./img/backgroundparts/wave_transition_p3-mob.png");
+    background-size: cover, 100%;
+    background-repeat: no-repeat;
+    background-size: cover, bottom; 
+    padding-bottom: 40px;
 }
 
 .howtoplay {
-    background-image: url('./img/Backgrounds/howtoplay-mobile.png');
+    background-image: url('./img/Backgrounds/howtoplay-mobile.png'), url("../img/backgroundparts/wave_transition_p4-mob.png");
+    background-size: cover, 100%;
+    background-repeat: no-repeat;
+    background-position: center, bottom;
+    padding-bottom: 40px;
     background-size: cover;
 }
 
@@ -34,8 +41,10 @@ body {
 }
 
 .gallery {
-  background-image: url('./img/Backgrounds/gallery-mobile.png');
-  background-size: cover;
+  background-image: url('./img/Backgrounds/gallery-mobile.png'), url("./img/backgroundparts/bright_p6-mob.png");
+  background-size: cover, 100%;
+  background-repeat: no-repeat;
+  background-position: center, bottom;
 }
 
 /*
@@ -307,23 +316,35 @@ body {
         @media (min-width: 1200px) {
 
           .features {
-    background-image: url('./img/Backgrounds/features-desk.png');
-    background-size: cover;
+    background-image: url('./img/Backgrounds/features-desk.png'), url("./img/backgroundparts/wave_transition_p3.png"), ;
+    background-size: cover, 1200px;
+    background-position: center, bottom;
+    background-repeat: no-repeat;
+    
 }
 
 .howtoplay {
-    background-image: url('./img/Backgrounds/howtoplay-desk.png');
-    background-size: cover;
+    background-image: url('./img/Backgrounds/howtoplay-desk.png'), url("./img//backgroundparts/wave_transition_p4.png");
+    background-size: cover, 1200px;
+    background-repeat: no-repeat;
+    background-position:center, bottom;;
+    
 }
 
 .faq {
-    background-image: url('./img/Backgrounds/faq-desk.png');
-    background-size: cover;
+    background-image: url('./img/Backgrounds/faq-desk.png'), url("./img//backgroundparts/wave_transition_p5.png");
+    background-size: cover, 1200px;
+    background-repeat: no-repeat;
+    background-position: bottom;;
+    
 }
 
 .gallery {
-    background-image: url('./img/Backgrounds/gallery-desk.png');
-    background-size: cover;
+    background-image: url('./img/Backgrounds/gallery-desk.png'),  url("./img/backgroundparts/bright_p6.png");
+    background-size: cover, 1200px;
+    background-repeat: no-repeat;
+    background-position: center, bottom;;
+    
     position: relative;
   }
 

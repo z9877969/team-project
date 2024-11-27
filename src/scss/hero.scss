@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   margin-top: 104px;
+  background-image: url("./img/backgroundparts/bright_p1_mob.png");
+  background-position: top;
+  background-size: 320px;
+  background-repeat: no-repeat;
 }
 .hero-image {
   width: 275px;
@@ -28,7 +32,10 @@
   gap: 48px;
   justify-content: center;
   align-items: center;
-  background-image: url('./img/backgroundparts/wavep1.png');
+  background-image: url('./img/backgroundparts/wave_p-mob.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   
 }
 .descr-block {
@@ -78,6 +85,14 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
 @media screen and (min-width: 1200px) {
+   .hero-sec {
+    background-image: url("./img/backgroundparts/bright_p1.png");
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+   }
+
+
   .hero-image {
     width: 598px;
     height: 242px;
@@ -106,6 +121,8 @@
     background-image: url('../img/backgroundparts/wavep1.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    
     
   }
   .img-download {
