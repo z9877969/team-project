@@ -21,9 +21,8 @@ body {
 }
 
 .features {
-  
-  background-image: url('./img/Backgrounds/features-mobile.png'),
-    url('./img/backgroundparts/wave_transition_p3-mob.png');
+  background-image: url('../img/Backgrounds/features-mobile.png'),
+    url('../img/backgroundparts/wave_transition_p3-mob.png');
   background-size: cover, 100%;
   background-repeat: no-repeat;
   background-size: cover, bottom;
@@ -31,9 +30,9 @@ body {
 }
 
 .howtoplay {
-  background-color: #2DC0F6;
-  background-image: url('./img/Backgrounds/howtoplay-mobile.png'),
-    url('./img/backgroundparts/wave_transition_p4-mob.png');
+  background-color: #2dc0f6;
+  background-image: url('../img/Backgrounds/howtoplay-mobile.png'),
+    url('../img/backgroundparts/wave_transition_p4-mob.png');
   background-size: cover, 100%;
   background-repeat: no-repeat;
   background-position: center, bottom;
@@ -42,16 +41,16 @@ body {
 }
 
 .faq {
-  background-image: url('./img/Backgrounds/faq-mobile.png'), 
-    radial-gradient(circle, rgba(4,111,160,1) 0%, rgba(16,172,231,1) 100%);
+  background-image: url('../img/Backgrounds/faq-mobile.png'),
+    radial-gradient(circle, rgba(4, 111, 160, 1) 0%, rgba(16, 172, 231, 1) 100%);
   background-size: cover, 320px;
   background-position: center, bottom;
   background-repeat: no-repeat;
 }
 
 .gallery {
-  background-image: url('./img/Backgrounds/gallery-mobile.png'),
-    url('./img/backgroundparts/bright_p6-mob.png');
+  background-image: url('../img/Backgrounds/gallery-mobile.png'),
+    url('../img/backgroundparts/bright_p6-mob.png');
   background-size: cover, 100%;
   background-repeat: no-repeat;
   background-position: center, bottom;
@@ -323,35 +322,38 @@ body {
 /* =================================== media 1200=============================================== */
 
 @media (min-width: 1200px) {
- .features {
-    background: rgb(4,111,160);
-background: linear-gradient(100deg, rgba(4,111,160,1) 0%, rgba(16,172,231,1) 100%);
-    background-image: 
-      url('./img/backgroundparts/wave_transition_p3.png');
+  .features {
+    background: rgb(4, 111, 160);
+    background: linear-gradient(
+      100deg,
+      rgba(4, 111, 160, 1) 0%,
+      rgba(16, 172, 231, 1) 100%
+    );
+    background-image: url('../img/backgroundparts/wave_transition_p3.png');
     background-size: cover, 1200px;
     background-position: center, bottom;
     background-repeat: no-repeat;
-}
+  }
 
   .howtoplay {
-    background-image: url('./img/Backgrounds/howtoplay-desk.png'),
-      url('./img/backgroundparts/wave_transition_p4.png');
+    background-image: url('../img/Backgrounds/howtoplay-desk.png'),
+      url('../img/backgroundparts/wave_transition_p4.png');
     background-size: cover, 1200px;
     background-repeat: no-repeat;
     background-position: center, bottom;
   }
 
   .faq {
-    background-image: url('./img/Backgrounds/faq-desk.png'),
-      url('./img//backgroundparts/wave_transition_p5.png');
+    background-image: url('../img/Backgrounds/faq-desk.png'),
+      url('../img//backgroundparts/wave_transition_p5.png');
     background-size: cover, 1200px;
     background-repeat: no-repeat;
     background-position: bottom;
   }
 
   .gallery {
-    background-image: url('./img/Backgrounds/gallery-desk.png'),
-      url('./img/backgroundparts/bright_p6.png');
+    background-image: url('../img/Backgrounds/gallery-desk.png'),
+      url('../img/backgroundparts/bright_p6.png');
     background-size: cover, 1200px;
     background-repeat: no-repeat;
     background-position: center, bottom;
