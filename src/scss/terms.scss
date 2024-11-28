@@ -2,9 +2,13 @@ body {
   width: 320px;
   align-content: center;
   justify-content: center;
-  background-color: #0d4e6d;
+  background-color: #046fa0;
   margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
+/*
 .backbutton {
   width: 160px;
   height: 40px;
@@ -22,12 +26,17 @@ body {
   margin-bottom: 48px;
   margin-top: 48px;
 }
+  */
+
+.backbutton {
+  margin-top: 48px;
+}
 .terms-sect {
   color: #f0faff;
-  background-color: #046fa0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 48px;
 }
 .privacy {
   margin-bottom: 48px;
@@ -38,7 +47,13 @@ p {
 .info {
   margin-bottom: 24px;
 }
-li {
+.info-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+.info-list-links {
+  list-style: disc;
+  text-decoration: underline;
 }
 li:last-child {
   margin-bottom: 24px;
