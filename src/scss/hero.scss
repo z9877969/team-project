@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   margin-top: 104px;
-  background-image: url('./img/backgroundparts/bright_p1_mob.png');
-  background-position: top;
-  background-size: 320px;
+  background-image: url('./img/backgroundparts/bright_p1_mob.png'), url("./img//backgroundparts/wave_transition_p2-mob.png");
+  background-position: top, bottom;
+  background-size: 320px, 320px;
   background-repeat: no-repeat;
 }
 /*
@@ -39,7 +39,7 @@
   align-items: center;
 }
 .download-wrap {
-  background-image: url('../img/backgroundparts/wavep-mob.png');
+  background-image: url('./img/backgroundparts/wavep-mob.png');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -82,9 +82,9 @@
 }
 @media screen and (min-width: 1200px) {
   .hero-sec {
-    background-image: url('./img/backgroundparts/bright_p1.png');
-    background-position: top;
-    background-size: 100%;
+    background-image: url('./img/backgroundparts/bright_p1.png'), url("./img//backgroundparts/wave_transition_p2.png");
+    background-position: top, bottom;
+    background-size: 100%, 1200px;
     background-repeat: no-repeat;
   }
 
@@ -115,7 +115,7 @@
     align-items: center;
   }
   .download-wrap {
-    background-image: url('../img/backgroundparts/wavep1.png');
+    background-image: url('./img/backgroundparts/wavep1.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
