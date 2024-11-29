@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-
-
 .container {
   width: 320px;
   margin: 0 auto;
@@ -60,6 +58,7 @@
   background-size: cover, 320px;
   background-position: center, bottom;
   background-repeat: no-repeat;
+  margin-top: -2px;
 }
 
 .gallery {
@@ -94,7 +93,6 @@
 
 .swiper-wrapper {
   height: 240px;
-  
 }
 
 .swiper-slide {
@@ -412,14 +410,14 @@
   }
 
   .third-image {
-  width: 168px;
-  height: 85px;
-  position: absolute;
+    width: 168px;
+    height: 85px;
+    position: absolute;
 
-  left: 104px;
-  top: 135px;
-  z-index: 3;
-}
+    left: 104px;
+    top: 135px;
+    z-index: 3;
+  }
 
   .faq-text {
     font-size: 36px;
@@ -431,8 +429,6 @@
     max-width: 1120px;
     margin: 0 auto;
     padding: 0;
-    
-    
   }
 
   .swiper-wrapper {
