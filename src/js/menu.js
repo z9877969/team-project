@@ -16,11 +16,3 @@ window.addEventListener('click', event => {
     mobileMenu.classList.remove('is-open');
   }
 });
-
-// Закриття меню при натисканні на пункт меню
-mobileMenu.addEventListener('click', event => {
-  if (event.target.tagName === 'A') {
-    // Перевірка, чи це посилання
-    mobileMenu.classList.remove('is-open');
-  }
-});
