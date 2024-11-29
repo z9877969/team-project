@@ -926,3 +926,7 @@
 .text-block-features p {
   font-weight: 400;
 }
+
+.arrow1 {
+position: fixed;
+}
