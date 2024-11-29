@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/team-project/assets/logo-s-6fd8e5d3.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <base href="/" />
+    <script type="module" crossorigin src="/team-project/commonHelpers3.js"></script>
+    <link rel="stylesheet" href="/team-project/assets/index-4f21f2d0.css">
+  </head>
+  <body>
+    <section class="header">
+  <div class="header-container">
+    <img class="logo-header" src="/team-project/assets/logo_new 2-def64a25.png" alt="logo" />
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#description-block" class="nav-link">Game Description</a>
+        </li>
+        <li class="nav-item">
+          <a href="#features" class="nav-link">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="#howtoplay" class="nav-link">How to Play</a>
+        </li>
+        <li class="nav-item">
+          <a href="#faq" class="nav-link">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a href="#gallery" class="nav-link">Gallery</a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="menu-btn js-open-menu">
+      <svg class="icon-menu" width="40" height="40">
+        <use href="/team-project/assets/sprite-a6dd6f17.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Мобільне меню -->
+  <div class="mobile-menu js-menu-container">
+    <ul class="mob-nav-menu">
+      <li>
+        <a href="./index.html" class="mob-nav-menu-item">Home</a>
+      </li>
+      <li>
+        <a href="#description-block" class="mob-nav-menu-item"
+          >Game Description</a
+        >
+      </li>
+      <li>
+        <a href="#features" class="mob-nav-menu-item">Features</a>
+      </li>
+      <li>
+        <a href="#howtoplay" class="mob-nav-menu-item">How to Play</a>
+      </li>
+      <li>
+        <a href="#faq" class="mob-nav-menu-item">FAQ</a>
+      </li>
+      <li>
+        <a href="#gallery" class="mob-nav-menu-item">Gallery</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="hero-sec">
+  <div class="bg-wrap">
+  <div class="container">
+  <div class="hero-sec-items">
+    <div class="hero-image">
+    <picture>
+      <source media="(max-width: 1190px)" srcset="/team-project/assets/Logo-mob-967ae0f6.png ">
+      <source media="(min-width: 1200px)" srcset="/team-project/assets/Logo-hero-ed27928d.png ">
+      <img src="/team-project/assets/Logo-hero-ed27928d.png" alt="Image 4">
+    </picture>
+    </div>
+    <div class="hero-text">
+      <picture>
+        <source media="(max-width: 1190px)" srcset="/team-project/assets/hero-text-a68e298a.png ">
+        <source media="(min-width: 1200px)" srcset="/team-project/assets/hero-text-14501036.png ">
+        <img src="/team-project/assets/hero-text-14501036.png" alt="herotext">
+      </picture>
+    </div>
+    <div class="download-wrap">
+    <div class="download">
+      <picture>
+        <source media="(max-width:1190px)" srcset="/team-project/assets/download_vector-31a5a869.png ">
+        <source media="(min-width:1200px)" srcset="/team-project/assets/download_vector-152872ee.png ">
+      <img class="img-download"
+        src="/team-project/assets/download_vector-152872ee.png"
+        alt="download-now"
+      />
+      <a
+        href="https://play.google.com/store/apps/details?id=com.newmerges.mergecove"
+        target="_blank"
+      >
+      </picture>
+        <img class="img-appstore"
+          src="/team-project/assets/app_store-92d139d9.svg"
+          alt="app-store"/>
+      </a>
+    </div>
+  </div>
+  </div>
+<div class="description" id="description-block">
+  <div class="descr-block">
+    <picture class="flag-blue">
+        <source media="(max-width: 1199px)" srcset="/team-project/assets/title-p2-c867a06c.png ">
+        <source media="(min-width: 1200px)" srcset="/team-project/assets/title-p2-c867a06c.png ">
+        <img src="/team-project/assets/descr-flag-2f273bad.png" alt="blueflag">
+      </picture>
+      <picture class="descr-game">
+        <source media="(max-width: 1199px)" srcset="/team-project/assets/game-descr-mob-e25b88b6.png ">
+        <source media="(min-width: 1200px)" srcset="/team-project/assets/game-descr-8e48a5f3.png ">
+        <img src="/team-project/assets/game-descr-8e48a5f3.png" alt="game-descript"/>
+    </picture>
+  </div>
+  </div>
+  </div>
+</section>
+
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Play</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+
+</head>
+
+<body>
+
+    <section class="features container" id="features">
+      <picture class="flag-blue flag-cont">
+        <source media="(max-width: 1199px)" srcset="/team-project/assets/title_p3-4261cf68.png ">
+        <source media="(min-width: 1200px)" srcset="/team-project/assets/title_p3-4261cf68.png ">
+        <img src="/team-project/assets/green-flag-0c69920c.png" alt="blueflag">
+      </picture>
+             <div class="swiper mySwiper3">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(max-width: 320px)" srcset="/team-project/assets/pick1-b8472cb2.png ">
+                        <source media="(min-width: 1200px)" srcset="/team-project/assets/pick1-b8472cb2.png ">
+                        <img src="/team-project/assets/pick1-b8472cb2.png" alt="Main">
+                    </picture>
+                    <div class="text-block-features">
+                        <h4>Unique Merge Mechanics:</h4>
+                        <p>Merge similar items to unlock new ones and expand your cove.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(max-width: 320px)" srcset="/team-project/assets/pick2-bdfac59a.png ">
+                        <source media="(min-width: 1200px)" srcset="/team-project/assets/pick2-bdfac59a.png ">
+                        <img src="/team-project/assets/pick2-bdfac59a.png" alt="Main">
+                    </picture>
+                    <div class="text-block-features">
+                        <h4>Beautiful Graphics:</h4>
+                        <p>Enjoy colorful visuals and charming animations as you play.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(max-width: 320px)" srcset="/team-project/assets/pick3-60eac61e.png ">
+                        <source media="(min-width: 1200px)" srcset="/team-project/assets/pick3-60eac61e.png ">
+                        <img src="/team-project/assets/pick3-60eac61e.png" alt="Main">
+                    </picture>
+                    <div class="text-block-features">
+                        <h4>Engaging Challenges:</h4>
+                        <p>Each level brings new puzzles and merging opportunities.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(max-width: 320px)" srcset="/team-project/assets/pick4-f6685685.png ">
+                        <source media="(min-width: 1200px)" srcset="/team-project/assets/pick4-f6685685.png ">
+                        <img src="/team-project/assets/pick4-f6685685.png" alt="Main">
+                    </picture>
+                    <div class="text-block-features">
+                        <h4>Rewarding Gameplay:</h4>
+                        <p>Earn coins and items to personalize and upgrade your cove.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(max-width: 320px)" srcset="/team-project/assets/pick5-519837d2.png ">
+                        <source media="(min-width: 1200px)" srcset="/team-project/assets/pick5-519837d2.png ">
+                        <img src="/team-project/assets/pick5-519837d2.png" alt="Main">
+                    </picture>
+                    <div class="text-block-features">
+                        <h4>Frequent Updates:</h4>
+                        <p>New levels, items, and events to keep the experience fresh and exciting.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="navigation-container">
+                <div class="custom-navigation howtoplay-nav">
+                    <button class="nav-prev howtoplay-prev">
+                        <svg class="icon-chevron">
+                            <use href="/team-project/assets/sprite-a6dd6f17.svg#icon-left_chevron"></use>
+                        </svg>
+                    </button>
+                    <button class="nav-next howtoplay-next">
+                        <svg class="icon-chevron">
+                            <use href="/team-project/assets/sprite-a6dd6f17.svg#icon-right_chevron"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="howtoplay container" id="howtoplay">
+            <picture class="flag-blue flag-cont">
+        <source media="(max-width: 1199px)" srcset="/team-project/assets/title_p4-88367a65.png ">
+        <source media="(min-width: 1200px)" srcset="/team-project/assets/title_p4-88367a65.png ">
+        <img src="/team-project/assets/red-flag-822fbb77.png" alt="blueflag">
+      </picture>
+        <div class="swiper-container mySwiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="main-image">
+                            <picture>
+                                 <source media="(max-width: 320px)"
+                        srcset="/team-project/assets/pick1-e4f8aa8d.png ">
+
+                         <source media="(min-width: 1200px)"
+                        srcset="/team-project/assets/pick1-04b45285.png ">
+
+                                <img src="/team-project/assets/pick1-e4f8aa8d.png" alt="Main">
+                            </picture>
+
+                        </div>
+                        <div class="secondary-image">
+                            <picture>
+                                  <source media="(max-width: 320px)"
+                        srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANiSURBVHgB1ZnPThNRFMa/c2emiraGGo2yoibqlhJd2y51JTvjRuoTgL5AwRew7Ex0ge6J3bim8QWArS4sGzWRhNI2hIR2jufedqCF/p8OHX4JmeHOzOXju+ee+4/gE97fn4bjzMJ1kyBKuEwJ75kiLkp5CUpto1bboXi8BB8QRsAIVGqRSS2AWYucHvDTAoHX5Z8r0NTULoZkKLFGpG1n2eXMEAI71yWileOsDCN6ILFapKvsJXFl2a/Ic3UTcqpWWx0kRPqKFaEJVvZXeTOJoGAuUsRJ93NZ9ayjXH7OytoKVKhGOiYf14p8UF3q9VpXsbVydZFB+XE3ey+YOFc/qGS7Pe8YBsZRLXRCuKCMfSP6+Wz5ObGNGNVNf3GOdoIUJSka3WktOxcGInRz0kKNjrqbN6myhTaxJl4k2BEG9GgoOb2tyLsxzW/ZvxAyWsPh1FnLyiKEyGiZ8+6Ns2F11YPqtbge4RrOWlYKYca2zWBhxEpOzSDEMCOtryYM3HKFMQbcyiGOfp4O71cezMKKXcM40KFgc6WS4rFIBf6+/4KDb99Pfr+fXxubWEQiKSUe38MY+PdxwwiNph4hEJgTSpLvLHxy9KOIvU8bcGZu4c6bVwgC10XSlqvvofXqwwTiL57i5stniMzcRlDYMi+b1vnAL3ffBuNoKwqXCIlZWS5fAmRZX5Iw4N0RV+Rt6Bxbrx62lR3/2YOuW3e8MVAimRckZV6wBZ/8fvehLce2ovOt47PjkaUWdDYoyo9eBvvKCtEnj7sKUtHr8I3s6njD7aZc0ggrhG0Vi82bbCAT3IktDgdBHM03r40dl+Z8duJrr06QYyf0BkjDWZnYEmEdIUSmr+veTs3ZNZjOCqFy13NV35+MYOJuUdzNIUS0uqppGw0aseuIu5zAxKEiOVa6q1gNV6tzsqIsYMLhMNCOjH6BQMuYIBKOK2eFmvJuH7DZRZQt9QvGCI3FVjs+6/VhU7DudBcSEtL0y+LoWtfn6EMjpTmbwXY66UzEr8XRQq+3+k6+TUqrH8/r5kEA6HRp6u8j1LyLIdAuw3KyEhoZ+EREFuSyOojIk28wAka046Rk4p7xdksG+mMNgQU5wFsb5QDP9xKheTamD+7mZMhJSI2nnZFlnkzQp4y7qNcLfk8Y/wNskT/CySrS5QAAAABJRU5ErkJggg== ">
+
+                         <source media="(min-width: 1200px)"
+                        srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABBCAYAAABhNaJ7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAT/SURBVHgB5Zu/bxtlGMe/z/1IaWMnjkSEWiTqDAyw1AFm4o6IoUUsTMQLEmIhsENbwcIUOiGmprAwpgNirOEPgGRCqpDqLgVRoTixSYLsu4fnOceOnTiOfb47n+8+i893vvP7PPe87/O8z/O+hAjgg4OraDQKYM67ZBb0HIHzJ35WJUIFrlsBUQW2vUUXLz5ByBBCgHd2cjDNGy6MIrF7UwTKwQ/MFSaUDaAMx3lACwtVBEygCuBabYUZa9Lwom+hBz0fvGEQbVA2+zMCIhAFHAl+Ww6LiAKxDOkut2lu7j7GZCwFRC74qQaIImbs4jhjhQEfaB93dmvrInwZkxJeIcpzo1lxatIWHXf8PAIjwvX6NXbcTf1zxAmf1jCSBTT36qsifDl2wista9ji3frHo9w2tALE5G8ZMgqHMboHSI6Jv9a2DnvDUF1AH6ijLqYIHZzN+eyd8353rgKmUfg2wyhhoAK0P6lJYYohpjWaz9w98/pZF7zR3uUtJAAyqECZzHa/a30HQfGpec/VJQSV5aw4ob8XMM1bsXR1flEXaVr3+l46eYL39lYZtIEEIoN58eRE6pQC3N29x4l6+91ItGjMzy11n+rpAvr2Eyu8ol2h1hsk9VhAot/+MVVymkvt5ErHAhL/9o/xslXtL8cKAJWQErpl9bqA5/dN6zFSBNlWXqfOLQuw7RtIG81mST88BbDDJaQMmSgV9ZM0RBTz30EKEW+wYMCyriGtzMysWJhAUrPx9BmefvFtz7lLr72CxQ/eRaRIpcoSn1BAhLi1fTz56Es0/nzWc96+/DyixnVRMFgDgwj5a/27jvDPvXwVk4SIC0afImVo/PPDT9j98RfveP7tN7Hw3luYKMw5sQDKIwKc2r/4e/1771jN/YVP3sfkoZyvypAfzOwsXvzqU1wQs3/pm8/k+yXEgJyFCJkrvoHZ11+Ni/AekVlAmzgJr+ggWEF6qUZuAbGCUBEFUCJy/36QXEDVUi1INBgZ+7/+3jn+79FxJdut73eu6ThxIZogaYskFVaSWOAeIkAjwD9unl+91iDpyucfImykYlQy4DhlpJVGY9tLibl7Nc0HhD4n0Gjw8NH5Czjsy4uYubKIcKGKMZdZ8gIhAm0yws8KaTSogVAcYHjrm44CIeINpAzDJK/4284K546ywnFe/hIgLfPXI88CtEoihcOpXggxCm3zVzqlsTTVBto1AT3uhMJiBRVKaFm8Gy39d68l7CmOpsEKut++0jMZ8qxgSleEDYOOcydXkp5eIeJ5BPs3RJgrjAaqkNNYPrnn4NR0uOURklcqI5PW+m246JsP0HU0SXKL3t6C2dkHfa8NulHmCA8xyeXwASDCl+WFXj/r+sCMkBQP39G+g6lF2m5ZpUG/GKwAHQ+cxvXpVIIMerZ57v6BoVaLt+ID++H0eIbhhFeGSop68YFaAiP++UOirWGFV4bOCqsSjPnscpy9g7bNyGaWR9k242vXGNfrq+xqxBibLlEl0yid5eoG4asuQJnMfe0ScZg8eZMbXfjoQ3jFlwX0NGBnpyCuZr296Cgq1L/Lxx3x8WWMwdgKaMO1WhFMq2HnFoMSvPM8BIy6TNj2CphLQVnFkdBlNJt3g95AHbgCuvGUYZoFqUCsyLcCt9Yj5QY3iFvb57Vkx+621C02w9g1fvx/E4APDvIiWE6XqLRaQVVRVBWHh9Uwhe3H/wvQ4o/7JnFXAAAAAElFTkSuQmCC ">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANiSURBVHgB1ZnPThNRFMa/c2emiraGGo2yoibqlhJd2y51JTvjRuoTgL5AwRew7Ex0ge6J3bim8QWArS4sGzWRhNI2hIR2jufedqCF/p8OHX4JmeHOzOXju+ee+4/gE97fn4bjzMJ1kyBKuEwJ75kiLkp5CUpto1bboXi8BB8QRsAIVGqRSS2AWYucHvDTAoHX5Z8r0NTULoZkKLFGpG1n2eXMEAI71yWileOsDCN6ILFapKvsJXFl2a/Ic3UTcqpWWx0kRPqKFaEJVvZXeTOJoGAuUsRJ93NZ9ayjXH7OytoKVKhGOiYf14p8UF3q9VpXsbVydZFB+XE3ey+YOFc/qGS7Pe8YBsZRLXRCuKCMfSP6+Wz5ObGNGNVNf3GOdoIUJSka3WktOxcGInRz0kKNjrqbN6myhTaxJl4k2BEG9GgoOb2tyLsxzW/ZvxAyWsPh1FnLyiKEyGiZ8+6Ns2F11YPqtbge4RrOWlYKYca2zWBhxEpOzSDEMCOtryYM3HKFMQbcyiGOfp4O71cezMKKXcM40KFgc6WS4rFIBf6+/4KDb99Pfr+fXxubWEQiKSUe38MY+PdxwwiNph4hEJgTSpLvLHxy9KOIvU8bcGZu4c6bVwgC10XSlqvvofXqwwTiL57i5stniMzcRlDYMi+b1vnAL3ffBuNoKwqXCIlZWS5fAmRZX5Iw4N0RV+Rt6Bxbrx62lR3/2YOuW3e8MVAimRckZV6wBZ/8fvehLce2ovOt47PjkaUWdDYoyo9eBvvKCtEnj7sKUtHr8I3s6njD7aZc0ggrhG0Vi82bbCAT3IktDgdBHM03r40dl+Z8duJrr06QYyf0BkjDWZnYEmEdIUSmr+veTs3ZNZjOCqFy13NV35+MYOJuUdzNIUS0uqppGw0aseuIu5zAxKEiOVa6q1gNV6tzsqIsYMLhMNCOjH6BQMuYIBKOK2eFmvJuH7DZRZQt9QvGCI3FVjs+6/VhU7DudBcSEtL0y+LoWtfn6EMjpTmbwXY66UzEr8XRQq+3+k6+TUqrH8/r5kEA6HRp6u8j1LyLIdAuw3KyEhoZ+EREFuSyOojIk28wAka046Rk4p7xdksG+mMNgQU5wFsb5QDP9xKheTamD+7mZMhJSI2nnZFlnkzQp4y7qNcLfk8Y/wNskT/CySrS5QAAAABJRU5ErkJggg==" alt="Secondary">
+                            </picture>
+
+                        </div>
+                        <div class="third-image">
+                            <div class="text-block">
+                                <h4>Discover Items:</h4>
+                                <p>Start with simple elements on your cove.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="main-image">
+                            <picture>
+                                 <source media="(max-width: 320px)"
+                        srcset="/team-project/assets/pick2-df106077.png ">
+
+                         <source media="(min-width: 1200px)"
+                        srcset="/team-project/assets/pick2-33dda552.png ">
+
+                                <img src="/team-project/assets/pick2-df106077.png" alt="Main">
+                            </picture>
+
+                        </div>
+                        <div class="secondary-image">
+                            <picture>
+                                  <source media="(max-width: 320px)"
+                        srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO5SURBVHgBzZk7TFNRGMf/5z5qIK2CgQEGqYODEyA7ZVYTjTq4URONjwUmNywkzlImBx1QFxcii3GkMmOAVQdbY9SICrSVSNre4/ed9pYW+r639P6Sm3tzH6f//s93vvMScIjc3u6BaQ7BskYgRNCSImg/04SM0/0daNoGstlN0du7AwcItIASqGmTUmhXISWL7Gnw05iAXKQ/FxNdXQk0SVNilUjDiEhLhpsQWLksEq2Z5mwzohsSyyItzZgiV6adijxStkBUy2bnGgmRumJJaFBqxht6cwTtQsq48JkT9VzWapaRTF6Rmr7eVqEMNUyZycblbnqq1mtVxWaT6UkJsex2tddCChnN7aYi1Z5XDAPlKAvtEBZE2Djpf3H4/hGx+Rjlqj8+RyshNDEi/P7N0ntHwoCErnRaqNKRs5ZVqiyhTKyKFwp2eAHuDSmnl92yL1T168ZneIzScDhwVtcj8CDUW0bta+WsV121EblsL/dweWd1PQQvYxiqs1BiKaeG4WGkxASfVRhYyZSEC1ipPSTfr6lr32A/ui+ch1twKBgylQpJF6T+fv0Ov54vKcE2py6NY/DRPbiCzxfSyOOzcEjm2xZ+zr9SQvtuX1MHs/t2FX/oT7iClEGDku8QHDrLnw/M3EXm+xb679xQ9/Y/fkFqdQ25EqedYFkYMejsuGvl+PQNlieUf5/yQ1NzoA9uQWHg/jhg69mScpmF9lx2LysacBGO2R/zL1WsstAzT2fgJhSzNF12IRtwI/v68Imqfn9oDIMz96EHuuEWNK3fMaiVJVqckRfJpf4i8eCxqvrA+BhO37yI/ULMsuAT54bgAiQ2l9uA7iwarPSeEsqkVj+ow4Y7hiE3woEWSlhlnA6eBrfc0DR/N+XW6xWfuZYNSKzd3a7QaQJeRWBDCwRG1UCGBrgdmxw2Ajm6XDjnV1wK49mOz70qIUwjyAsgeWdpYCsEFuFBaPi6aK/UHJ6DrcNj7tqu8nVxDkbuxsndKDxEqatMWW+Qj12T3JVBdBwRF6Y+UVUsI9PpYZpRxtDhcGhoRYZfEBDT6CAUjrOHhar71T6QahWRltSPGSU0EJir+KzWhwXB3OiOJSSo6qfJ0YWqz1GHfEozV9rb6KgxCXmLHI3VeqvmyrcqhlNaLjPK1YM2wOlSlV9HqHoXTcAuQzcjFBphOIRExug014jI4jdoASXaNEM0cA/bqyUN/VheYIw28BZa2cBzNkVAcW+MN+6GqcsJUokHjVHSOFmAdxkTNMiPOd1h/A+RiXTHlKPgIQAAAABJRU5ErkJggg== ">
+
+                         <source media="(min-width: 1200px)"
+                        srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABBCAYAAABhNaJ7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAT6SURBVHgB5ZtPaBxlFMDf+2Y2tDWbbqQiQbFbsId6aaL3dntT9LB40oOkAUHw0tiDt5JUvIhgohcFBaOCeClEUDy66U2odXNR0EOnCK2YSjbZbVrYmXm+N5uZzu5O9v9+2dn5wTLf7Myw+9733vfe9775EIYIbW9nwDDOA1EWlMq6hBkEbremhAgWuK7FzxTBtjdxeroEQwJhwFC5fJ4PeXIpD4hZGAQERVRQ4NY6ptMbMEAGogDpaVeZl7h3F1noDAwTIotAraoJYx2PHr0NfdKXArQKHvX7QGsqlVruRxE9K8DZKS8dluANlIhg1Tievgo90LUCqFI5Sw6t8ZOzMEqwa+BEKtetNahubqadyiVy3MLICS/wgEtV25L/2NVjnd7IJr/C4WkRYgC7xHKnLtGRApyd3S8R8SLECBkgjamphXb3tVVAHIX36UQJLceAmtnHU3gBAS865fJKq3sOVIAX5mLi861AgsVWA2OkC3CCkyXDvAVjBHdmLiqNbrIAye5IGT/DmMFzkzVvctZAkwI4tV0a2CRmlGCZXJNla/w6fDKOpt8IpsxsOFustwDDWIIxh7PFtfB5YAFJ6H2f8ID4yAIS0Psh8n7Ds4Ak9f4+JXTsU1Jqq1mA1O2SRQZSqXlpeAogiG+62ytezRL2XcDdLRMkD88N1H4VN4lkwDTPKo4Jo1fd0QXLrsClHCQU14VZk8QUdP5oeQ/+++4nqGzcgId/1TLSI6dPwvRrL0HmlXOgE0SaRdrdvcVRIAsaqN7Zgttvvw/Vu1uR1489fwZOfnoF9EGW0iW8sPXFtUB4lT4Gx18+5wnts3fzDyj9cB30gRkTNLJ383fvmJo5Ac9wT0/MPOGd33nvM9j5sSZ45foNna6gVwHPrn8C93+tKcEXXkiF2k75PuhEqwKEx154rum78Jhw5HQWdNLVytAwePinFZi/MP36i6CTQ1WADHoSFXxOvPlqnWvoQLsL+Egu8O/KN8H5k++8AY9zLqCbQ1HA1ufX4B6HREHC4dMfXI4cG3Rg8hq/pSsXkCzwn5WvA5+XDPCpDy9rN/tHkKXVAv5+96MgF5AESEzevnvP+4QJJ0dDBbHECsAiN7OggXC4kwFQPlGc+eVb0AEXQ7gkJq+kJZeiCUSbQ3hbLpKZK2/BSKFUARNYEQ6QVSLFpWFLIgEkDYSiLJHVMkHENUgY7PQFOfqpcAGShm1/JYdg9OPSuLwTkIMkwOav0uk5aQaTIVTJcQNEXA3a4QtsBduguUiqH7TU1OQp/6xuOsxWEPuXotqBCpbrzhtvGO+xoL73haaCCGK9hsYJTBm5xu+aFZBOb7ASVmHMkI6NepP8wEnAWLkCIoe9ybmoSwfWBHnpeEF8BmIPWmga+QOvtnp0f6L0G8Q2NLLw7PetNlG0rAp7EyWFOW4ObdvaEClxyMu320HStiyOk5Ob7A5z8XIH6XlzVv57uzs7WhfwLMGpXoiFEnjAa2f2YTpeGBElSBIxyiFS/hva1QvdbJzqqRZGlco8uZIwtd0Gqwk2eaQFzmEK0CX9bZwsl5eI5BW7Q1NEybNI2/641/3FfVdDJVSCac5rVkTfgvsMtBwsrsFV5jwR5GHwiNCyhnGVBS8Oakf50Orh7B45Psg7iDnZPt/t8ptXqEVZtJHIQ98PUuj639EIPXiQBcfJsEKiM0teqgLDKPEoboEm/gcKUtZ5Y5z++gAAAABJRU5ErkJggg== ">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO5SURBVHgBzZk7TFNRGMf/5z5qIK2CgQEGqYODEyA7ZVYTjTq4URONjwUmNywkzlImBx1QFxcii3GkMmOAVQdbY9SICrSVSNre4/ed9pYW+r639P6Sm3tzH6f//s93vvMScIjc3u6BaQ7BskYgRNCSImg/04SM0/0daNoGstlN0du7AwcItIASqGmTUmhXISWL7Gnw05iAXKQ/FxNdXQk0SVNilUjDiEhLhpsQWLksEq2Z5mwzohsSyyItzZgiV6adijxStkBUy2bnGgmRumJJaFBqxht6cwTtQsq48JkT9VzWapaRTF6Rmr7eVqEMNUyZycblbnqq1mtVxWaT6UkJsex2tddCChnN7aYi1Z5XDAPlKAvtEBZE2Djpf3H4/hGx+Rjlqj8+RyshNDEi/P7N0ntHwoCErnRaqNKRs5ZVqiyhTKyKFwp2eAHuDSmnl92yL1T168ZneIzScDhwVtcj8CDUW0bta+WsV121EblsL/dweWd1PQQvYxiqs1BiKaeG4WGkxASfVRhYyZSEC1ipPSTfr6lr32A/ui+ch1twKBgylQpJF6T+fv0Ov54vKcE2py6NY/DRPbiCzxfSyOOzcEjm2xZ+zr9SQvtuX1MHs/t2FX/oT7iClEGDku8QHDrLnw/M3EXm+xb679xQ9/Y/fkFqdQ25EqedYFkYMejsuGvl+PQNlieUf5/yQ1NzoA9uQWHg/jhg69mScpmF9lx2LysacBGO2R/zL1WsstAzT2fgJhSzNF12IRtwI/v68Imqfn9oDIMz96EHuuEWNK3fMaiVJVqckRfJpf4i8eCxqvrA+BhO37yI/ULMsuAT54bgAiQ2l9uA7iwarPSeEsqkVj+ow4Y7hiE3woEWSlhlnA6eBrfc0DR/N+XW6xWfuZYNSKzd3a7QaQJeRWBDCwRG1UCGBrgdmxw2Ajm6XDjnV1wK49mOz70qIUwjyAsgeWdpYCsEFuFBaPi6aK/UHJ6DrcNj7tqu8nVxDkbuxsndKDxEqatMWW+Qj12T3JVBdBwRF6Y+UVUsI9PpYZpRxtDhcGhoRYZfEBDT6CAUjrOHhar71T6QahWRltSPGSU0EJir+KzWhwXB3OiOJSSo6qfJ0YWqz1GHfEozV9rb6KgxCXmLHI3VeqvmyrcqhlNaLjPK1YM2wOlSlV9HqHoXTcAuQzcjFBphOIRExug014jI4jdoASXaNEM0cA/bqyUN/VheYIw28BZa2cBzNkVAcW+MN+6GqcsJUokHjVHSOFmAdxkTNMiPOd1h/A+RiXTHlKPgIQAAAABJRU5ErkJggg==" alt="Secondary">
+                            </picture>
+
+                        </div>
+                        <div class="third-image">
+                           <div class="text-block">
+                                <h4>Merge Items:</h4>
+                                <p>Drag similar items together
+to unlock new ones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="main-image">
+                            <picture>
+                                 <source media="(max-width: 320px)"
+                        srcset="/team-project/assets/pick3-df323a80.png ">
+
+                         <source media="(min-width: 1200px)"
+                        srcset="/team-project/assets/pick3-03594aaf.png ">
+
+                                <img src="/team-project/assets/pick3-df323a80.png" alt="Main">
+                            </picture>
+
+                        </div>
+                        <div class="secondary-image">
+                            <picture>
+                                  <source media="(max-width: 320px)"
+                        srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPOSURBVHgBzZk7TBRBGMf/M7t7gnJ6xCfGwFmopZhYe5QaTbS0Uc/KUoyVhUG0s8LGmGiBnQ2RQhM7DmoRaLAwkaMBIiQc3Eki3O74zXe3cDzuxc5x+0vILLMP/vznm29eAgFRy8sxOE4XPK8bQsQ9JeL+PSlUmuozkHIS+fyUaG/PIAAC+4AFSvlACXkHSmmRsRpfTQmoQfrnUqK1dRZ1UpdYFmnbfcpTyToE7v0tEi0d50U9omsSq0V60n5MrvQGFbnr2wIDMp/vryVEqooloXEl7c/0ZDcahVJpEXF6qrksK35jdfW2ktZEQ4VqqGOqjXxareQeV3qsrNj8au6Bghg23eyVUEINuCvZvnL39wwDdlQLbRIeRNI+2vZxZ/0usYUY1U1/cI7uhZCiW7S1TZXW7QoDEjrSbKGsw/WGOVWWsE0sxwsFO8KAHg0pp2+r8i+4+S17BiGjNBy2nLWsPoQQGi0H/Gt2Nqyu+gg3365HuIKzlpVAmLFtHixYLOXUJEKMUujRJYeBt5pVMMDaj59Yn1vk69ZLXTh0oQum0KFgq2w2oQxInXv5Ditfx7bVtd+9jjNP7sMIkUhCksfnERA3+5dcnUYLOdnx/BFO997j+uVP37A2Pg0jKBW3Kfl2IaCzVvQIOt8+59KKHua6DLn879cs3NwaTOB56LapNDK0Rs6exAbFa3b0OzbmF1mo03EChy6ai1ub5mUxwEj/wvrCEuZfveNrSQ6fe/0UkY6TMIWEQVoudHLMnnpSiNmZe8/MxSy0WL1cNoBueh2zsVsJHL97A9FrV7k+OzoOE9CyPqOzQd1L4p1kvozhN7m4+H4IXnaNY1fnXP4jxQ5ngIwN152EZSMILRc7uVz6MMQ/PrqDHbt1DUagjRKhJ7jFSUygrKBHLp1X1xf+wGo7wlkgdjOxmcqCIhw77g+3I1T0IKwITMpo9ApnA5rgNm1xWAvk6HCxLOy4mAiFRsEhQBsgBWdpYisEBhFCaPo66O/U7FyDTSBk7vqu6uvNEYzcTZO7AwgRpa5qtm1yFGLXIXdVHE1HpIVj9ZQVq1G53GVaUabQ5HCoaUdGPyAgetFEKBxf7BTK9eVeULyLSFvqBwwLjUb797xX6cWiYN3pDiQkqOl7ydE3Ze+jCoWU5ow0ttNRZxLqITmaqvRU1ck3pzR344puHjQAnS75+1WE8rOoA+0yLKePQiOJgJDIFBX9tYjcfAf7gEU7ToIm7kl/t6SmP1YQmKIDvDf7OcDbl9hSimdj+uDuMg05cfriVmdUyNDv+pSR1uRuKugJ43+SH3a7pip0WAAAAABJRU5ErkJggg== ">
+
+                         <source media="(min-width: 1200px)"
+                        srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABBCAYAAABhNaJ7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAU1SURBVHgB5ZtNaBtXEMf/83Zl4g85CtgU+1DLhxTaS+y20FusnNuDILdCsQ0tzS3upackdkqht9q9pIEW4raX9BBID6G5Vc7ZTZ1LDO0hMhQH6hDLXtkJSNrXmbUkS7KsD0t6lrQ/EPtW+xZp5s3Mm/dFaCF6ezsEy5qC1mEoFXY1hQhcrkyCCHG4bpzfWUM6/YTOnUugRRCajHacKb5EtaujIAqjGWiskUKMS/cpGFxBE2mKAqSlXWVf5dadY6FDaCVaxzXUkuqx7lNv7wYapCEFGBW83O9DL6tAYKERRZxYAZkdZ/60BC8hoTWWrLPBmzgBdStAJ5MXdEYv85sTaCfYNagnEKnXGlQ9lfVO8qrOuLG2E17ggKtT6bj8x7peq7Uim/wid09z6ADYJRZqdYmaFJDZ2b1DRDPoICRAWoODs9XqVVVAJwqfoxYlVIwBB2bfmcILBJrJOM5ipTrHKsDr5jrE5ytBGnOVAmNZF+AEJ6wt+xm6CG7MSLk0+ogFSHanlfUHugwemyx7g7MSjiiAU9v5pg1i2gmWybVZttKvC2+60fRLoYAdLswWiy3AsubR5XC2uFx4n7cAP7R+jsKAeGgBPmj9AqK5gmcBfmr9LAnKpMdlqu3AAmTezl+EEAhMS8FTgEbnprsnxZuzRNYF3F1Hw394bqCys7h+JATbvqC4T2i/2R1TsOwKro7Ap7guJmwtpmCQ/cfreHn3d7z+ewOp51tQwT6cOR/G2Q8vIvTRRZiESE+Q3t19xr1AGAbY+uEeXvx479jnooTRG1dgDh1XpoTPOHvYeXA4HA9OvY+hTy97QufYefAI+38+hTkoZMMQVrAfb966jn+//BYjNz5H71vh/DNxBXENYY+vfe+9A0OYU4DQMzqMse+vszL6ir63BvoPyyXPWo1RBQg5AfMtzibvPFr1yoGRIQywa5iETisLXP/g46L7vnffZte4gp6RYZikrqWxVpJ6/oID4DpMc2oWsJeN9vuPn+Llrw/hOvve/ditayaDoPkYkKM/K6RcFfcQ/y3+4t2LMkwqQPEafxyGSG1uYfOr2xXrSL5gDh03ZgFObBWbX9/2TN1N7uONLz7hqD/spcTbdx/m6wVMBkGiBCuA1rgYRosJjA7ly87KqvcpRcYFQ59dhil4MoSnxGRLmgHOcOY3/vM3Xl9f9vn5Mc4Ur5nuBtdkMDTD44E7MIj0AK//2fDcQRQiZt9vMPDlIEtFyYczwnlklUjx1HDcZE/QNhCbPy+RHWSCRMvwGRwAY3LNpcIx+I10+ie55NcGOSWWPQER+AE2fxUMTkoxPxgi5R83IKKlfLnwAVvBNgxPkpqH4mpwYDx3VzQcZivo+E1R1SCFhaL70grdHQuKW184MiFCVKyhboICVqT0u6MKCAZXWAlL6DKkYcvtJD92q2xXuQIRd3sDk+UeHTsnyEvHs+Iz6HgoTrYVPfZppVezA6W/0LFdIwvPfl/pEEXFWWFvoKQowsWWHVtrIQnu8qLVTpBUnRangYEn7A6TneUO0vL2hPz3ajVrWhfwLCGTutQRSuCAV83sC6l5YUSUIElEO3eR8t8onbpUz8GpEx2b08nktHYlYap6DNYQbPKkZzmHiaFOGjs46TjzWssWu1NTRMKzyHT6u5OeL2746Kx0lbDtacOKaFjwHE09PC2uAa2jWiOK5iNCyxrGTRZ8rVknypuqgELYPSJ8kT2IETk+X+9WHG+ilmTRRnoe/VszhS7+HYPoV6/CyGRCrJDymSUvVcGyEhzF4zDE/2pW7AkI5I/SAAAAAElFTkSuQmCC ">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPOSURBVHgBzZk7TBRBGMf/M7t7gnJ6xCfGwFmopZhYe5QaTbS0Uc/KUoyVhUG0s8LGmGiBnQ2RQhM7DmoRaLAwkaMBIiQc3Eki3O74zXe3cDzuxc5x+0vILLMP/vznm29eAgFRy8sxOE4XPK8bQsQ9JeL+PSlUmuozkHIS+fyUaG/PIAAC+4AFSvlACXkHSmmRsRpfTQmoQfrnUqK1dRZ1UpdYFmnbfcpTyToE7v0tEi0d50U9omsSq0V60n5MrvQGFbnr2wIDMp/vryVEqooloXEl7c/0ZDcahVJpEXF6qrksK35jdfW2ktZEQ4VqqGOqjXxareQeV3qsrNj8au6Bghg23eyVUEINuCvZvnL39wwDdlQLbRIeRNI+2vZxZ/0usYUY1U1/cI7uhZCiW7S1TZXW7QoDEjrSbKGsw/WGOVWWsE0sxwsFO8KAHg0pp2+r8i+4+S17BiGjNBy2nLWsPoQQGi0H/Gt2Nqyu+gg3365HuIKzlpVAmLFtHixYLOXUJEKMUujRJYeBt5pVMMDaj59Yn1vk69ZLXTh0oQum0KFgq2w2oQxInXv5Ditfx7bVtd+9jjNP7sMIkUhCksfnERA3+5dcnUYLOdnx/BFO997j+uVP37A2Pg0jKBW3Kfl2IaCzVvQIOt8+59KKHua6DLn879cs3NwaTOB56LapNDK0Rs6exAbFa3b0OzbmF1mo03EChy6ai1ub5mUxwEj/wvrCEuZfveNrSQ6fe/0UkY6TMIWEQVoudHLMnnpSiNmZe8/MxSy0WL1cNoBueh2zsVsJHL97A9FrV7k+OzoOE9CyPqOzQd1L4p1kvozhN7m4+H4IXnaNY1fnXP4jxQ5ngIwN152EZSMILRc7uVz6MMQ/PrqDHbt1DUagjRKhJ7jFSUygrKBHLp1X1xf+wGo7wlkgdjOxmcqCIhw77g+3I1T0IKwITMpo9ApnA5rgNm1xWAvk6HCxLOy4mAiFRsEhQBsgBWdpYisEBhFCaPo66O/U7FyDTSBk7vqu6uvNEYzcTZO7AwgRpa5qtm1yFGLXIXdVHE1HpIVj9ZQVq1G53GVaUabQ5HCoaUdGPyAgetFEKBxf7BTK9eVeULyLSFvqBwwLjUb797xX6cWiYN3pDiQkqOl7ydE3Ze+jCoWU5ow0ttNRZxLqITmaqvRU1ck3pzR344puHjQAnS75+1WE8rOoA+0yLKePQiOJgJDIFBX9tYjcfAf7gEU7ToIm7kl/t6SmP1YQmKIDvDf7OcDbl9hSimdj+uDuMg05cfriVmdUyNDv+pSR1uRuKugJ43+SH3a7pip0WAAAAABJRU5ErkJggg==" alt="Secondary">
+                            </picture>
+
+                        </div>
+                        <div class="third-image">
+                            <div class="text-block">
+                                <h4>Complete Quests:</h4>
+                                <p>Finish puzzles and quests
+to earn rewards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="main-image">
+                            <picture>
+                                 <source media="(max-width: 320px)"
+                        srcset="/team-project/assets/pick4-8bd35379.png ">
+
+                         <source media="(min-width: 1200px)"
+                        srcset="/team-project/assets/pick4-220915c7.png ">
+
+                                <img src="/team-project/assets/pick4-8bd35379.png" alt="Main">
+                            </picture>
+
+                        </div>
+                        <div class="secondary-image">
+                            <picture>
+                                  <source media="(max-width: 320px)"
+                        srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAONSURBVHgBzZm/T5NBGMe/d+/7ViFUqamJTNTBAReKiXGzHU0cJGEwMSbURAddYHUwhegfUCYHGXAxcUAZNI40bC4CE4OJtg461EhpK4lp+57PXXlLgf5+76XvJ2nuzb33Hl+ee+655+4YXCJ2d0dhWeOw7SgYi9iCRZx3nIkM1efB+RYqlW0WCuXhAoY+UAI5nxWMT0MIKXK0y0/TDGKF/rk0GxrKokd6EqtEmmZS2CLRg8DmfZFoblkLvYjuSqwUaXNzjqwy71bkib4ZUrxSWezGRTqKJaERwc331DIKrxAiwwJWvJOVeds+CoU7ghubngqV0MQU5UpG7JXm2jVrKbZSKM0KsDXdw94OwUSquldMtnrf1A2URaXQAWGDJcxzI6+P158QW/NROfSnZ9FmMM6ibGRku7HuhBuQ0PVBC1U6qvaaCpUNHBGr/IWcHX5AroYU049UOQ9q+A3zO3xGozscWtYwkvAhtFqmnGdlWb9a1YFVKyG5wtUsaxgx+BnTVIuFEksxNQEfIwTislRuYBeKAhr59zWLanEfRnAYZ66MQwfSFUxRLMaERqnlnzl8u/9UPQ9fm8D4y2fQQiAQ42Tjy9BI9skLeIIQEU7BV884EblXqyj/yiF09xZ0Y9uIygmmZWmVw//n7Secv30Twfh1eAG5gZ48ILe8qsrwoxl4BYcG8h82sPdxAxdo+ANjF+EVJuR22WU0kH4q+b38Tv0c9r/sYOfGPUx8fgO30LY+b9Isy/a5I69zlmKp9FUHKV4KtcbCFL6uQhN5RnlBlPKCTWjkLwn98fi51jjLDD5tUpmhn9wGa0u4A5fCCD+cUZbVBp3qOMvtOhVx+BWGLR4MTqloQAnuwDaH3UAWXTsoaycuB/nswPdezWCWGZEHIDXLUmLLGFbgQyh9XXFOao7vwWRU8JV1HavK5/oKRtbNkHVT8BGNVpUcWQ1qvmuRdUUEA4dlmGXEW4qViFJpknaUaQzYHbo6kZENGNg8Bgi548Jxoaq+1QdCnSLSkfopo4QGg4tN37X78ECwnHSn4hI09PNk0aWW79GBWkiz1r2ddDSZmHhAFk23a9Ux+VYhrVqeksMDD5DhUvXfQahqix6QVoZhJck1EnAJiUxTsdiNyPo36AMl2rJilLgnnNOSrv5YTWCaLvCW+rnAc7dFQP1uTF7cTdKSE6EeDyejoDyZQd4y0hFNNe32hvE/HsBTpYiBznYAAAAASUVORK5CYII= ">
+
+                         <source media="(min-width: 1200px)"
+                        srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABBCAYAAABhNaJ7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAU1SURBVHgB5ZtNaBtXEMf/83Zl4g85CtgU+1DLhxTaS+y20FusnNuDILdCsQ0tzS3upackdkqht9q9pIEW4raX9BBID6G5Vc7ZTZ1LDO0hMhQH6hDLXtkJSNrXmbUkS7KsD0t6lrQ/EPtW+xZp5s3Mm/dFaCF6ezsEy5qC1mEoFXY1hQhcrkyCCHG4bpzfWUM6/YTOnUugRRCajHacKb5EtaujIAqjGWiskUKMS/cpGFxBE2mKAqSlXWVf5dadY6FDaCVaxzXUkuqx7lNv7wYapCEFGBW83O9DL6tAYKERRZxYAZkdZ/60BC8hoTWWrLPBmzgBdStAJ5MXdEYv85sTaCfYNagnEKnXGlQ9lfVO8qrOuLG2E17ggKtT6bj8x7peq7Uim/wid09z6ADYJRZqdYmaFJDZ2b1DRDPoICRAWoODs9XqVVVAJwqfoxYlVIwBB2bfmcILBJrJOM5ipTrHKsDr5jrE5ytBGnOVAmNZF+AEJ6wt+xm6CG7MSLk0+ogFSHanlfUHugwemyx7g7MSjiiAU9v5pg1i2gmWybVZttKvC2+60fRLoYAdLswWiy3AsubR5XC2uFx4n7cAP7R+jsKAeGgBPmj9AqK5gmcBfmr9LAnKpMdlqu3AAmTezl+EEAhMS8FTgEbnprsnxZuzRNYF3F1Hw394bqCys7h+JATbvqC4T2i/2R1TsOwKro7Ap7guJmwtpmCQ/cfreHn3d7z+ewOp51tQwT6cOR/G2Q8vIvTRRZiESE+Q3t19xr1AGAbY+uEeXvx479jnooTRG1dgDh1XpoTPOHvYeXA4HA9OvY+hTy97QufYefAI+38+hTkoZMMQVrAfb966jn+//BYjNz5H71vh/DNxBXENYY+vfe+9A0OYU4DQMzqMse+vszL6ir63BvoPyyXPWo1RBQg5AfMtzibvPFr1yoGRIQywa5iETisLXP/g46L7vnffZte4gp6RYZikrqWxVpJ6/oID4DpMc2oWsJeN9vuPn+Llrw/hOvve/ditayaDoPkYkKM/K6RcFfcQ/y3+4t2LMkwqQPEafxyGSG1uYfOr2xXrSL5gDh03ZgFObBWbX9/2TN1N7uONLz7hqD/spcTbdx/m6wVMBkGiBCuA1rgYRosJjA7ly87KqvcpRcYFQ59dhil4MoSnxGRLmgHOcOY3/vM3Xl9f9vn5Mc4Ur5nuBtdkMDTD44E7MIj0AK//2fDcQRQiZt9vMPDlIEtFyYczwnlklUjx1HDcZE/QNhCbPy+RHWSCRMvwGRwAY3LNpcIx+I10+ie55NcGOSWWPQER+AE2fxUMTkoxPxgi5R83IKKlfLnwAVvBNgxPkpqH4mpwYDx3VzQcZivo+E1R1SCFhaL70grdHQuKW184MiFCVKyhboICVqT0u6MKCAZXWAlL6DKkYcvtJD92q2xXuQIRd3sDk+UeHTsnyEvHs+Iz6HgoTrYVPfZppVezA6W/0LFdIwvPfl/pEEXFWWFvoKQowsWWHVtrIQnu8qLVTpBUnRangYEn7A6TneUO0vL2hPz3ajVrWhfwLCGTutQRSuCAV83sC6l5YUSUIElEO3eR8t8onbpUz8GpEx2b08nktHYlYap6DNYQbPKkZzmHiaFOGjs46TjzWssWu1NTRMKzyHT6u5OeL2746Kx0lbDtacOKaFjwHE09PC2uAa2jWiOK5iNCyxrGTRZ8rVknypuqgELYPSJ8kT2IETk+X+9WHG+ilmTRRnoe/VszhS7+HYPoV6/CyGRCrJDymSUvVcGyEhzF4zDE/2pW7AkI5I/SAAAAAElFTkSuQmCC ">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAONSURBVHgBzZm/T5NBGMe/d+/7ViFUqamJTNTBAReKiXGzHU0cJGEwMSbURAddYHUwhegfUCYHGXAxcUAZNI40bC4CE4OJtg461EhpK4lp+57PXXlLgf5+76XvJ2nuzb33Hl+ee+655+4YXCJ2d0dhWeOw7SgYi9iCRZx3nIkM1efB+RYqlW0WCuXhAoY+UAI5nxWMT0MIKXK0y0/TDGKF/rk0GxrKokd6EqtEmmZS2CLRg8DmfZFoblkLvYjuSqwUaXNzjqwy71bkib4ZUrxSWezGRTqKJaERwc331DIKrxAiwwJWvJOVeds+CoU7ghubngqV0MQU5UpG7JXm2jVrKbZSKM0KsDXdw94OwUSquldMtnrf1A2URaXQAWGDJcxzI6+P158QW/NROfSnZ9FmMM6ibGRku7HuhBuQ0PVBC1U6qvaaCpUNHBGr/IWcHX5AroYU049UOQ9q+A3zO3xGozscWtYwkvAhtFqmnGdlWb9a1YFVKyG5wtUsaxgx+BnTVIuFEksxNQEfIwTislRuYBeKAhr59zWLanEfRnAYZ66MQwfSFUxRLMaERqnlnzl8u/9UPQ9fm8D4y2fQQiAQ42Tjy9BI9skLeIIQEU7BV884EblXqyj/yiF09xZ0Y9uIygmmZWmVw//n7Secv30Twfh1eAG5gZ48ILe8qsrwoxl4BYcG8h82sPdxAxdo+ANjF+EVJuR22WU0kH4q+b38Tv0c9r/sYOfGPUx8fgO30LY+b9Isy/a5I69zlmKp9FUHKV4KtcbCFL6uQhN5RnlBlPKCTWjkLwn98fi51jjLDD5tUpmhn9wGa0u4A5fCCD+cUZbVBp3qOMvtOhVx+BWGLR4MTqloQAnuwDaH3UAWXTsoaycuB/nswPdezWCWGZEHIDXLUmLLGFbgQyh9XXFOao7vwWRU8JV1HavK5/oKRtbNkHVT8BGNVpUcWQ1qvmuRdUUEA4dlmGXEW4qViFJpknaUaQzYHbo6kZENGNg8Bgi548Jxoaq+1QdCnSLSkfopo4QGg4tN37X78ECwnHSn4hI09PNk0aWW79GBWkiz1r2ddDSZmHhAFk23a9Ux+VYhrVqeksMDD5DhUvXfQahqix6QVoZhJck1EnAJiUxTsdiNyPo36AMl2rJilLgnnNOSrv5YTWCaLvCW+rnAc7dFQP1uTF7cTdKSE6EeDyejoDyZQd4y0hFNNe32hvE/HsBTpYiBznYAAAAASUVORK5CYII=" alt="Secondary">
+                            </picture>
+
+                        </div>
+                        <div class="third-image">
+                            <div class="text-block">
+                                <h4>Expand Your Cove</h4>
+                                <p>Unlock areas and build
+a unique paradise with
+your merged items.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="navigation-container">
+                <div class="custom-navigation howtoplay-nav">
+                    <button class="nav-prev howtoplay-prev">
+                        <svg class="icon-chevron">
+                            <use href="/team-project/assets/sprite-a6dd6f17.svg#icon-left_chevron"></use>
+                        </svg>
+                    </button>
+                    <button class="nav-next howtoplay-next">
+                        <svg class="icon-chevron">
+                            <use href="/team-project/assets/sprite-a6dd6f17.svg#icon-right_chevron"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+        <section class="faq container" id="faq">
+
+
+            <picture class="flag-blue flag-cont">
+        <source media="(max-width: 1199px)" srcset="/team-project/assets/title_p5-e24fbf82.png ">
+        <source media="(min-width: 1200px)" srcset="/team-project/assets/title_p5-e24fbf82.png ">
+        <img src="/team-project/assets/blue-faq-646ec459.png" alt="blueflag">
+      </picture>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header" id="headingOne">
+                        <h3>Is Merge Cove free to play?</h3>
+                        <span class="chevron">
+                            <svg class="icon-chevron">
+                                <use href="/team-project/assets/sprite-a6dd6f17.svg#icon-down_chevron"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="accordion-content" id="collapseOne" style="display: none;">
+                        <p>Start with simple elements on your cove.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header" id="headingTwo">
+                        <h3>Can I play without an internet connection?</h3>
+                        <span class="chevron">
+                            <svg class="icon-chevron">
+                                <use href="/team-project/assets/sprite-a6dd6f17.svg#icon-down_chevron"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="accordion-content" id="collapseTwo" style="display: none;">
+                        <p>Yes, Merge Cove can be enjoyed offline as well.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header" id="headingThree">
+                        <h3>What age is the game suitable for?</h3>
+                        <span class="chevron"></span>
+                            <svg class="icon-chevron">
+                                <use href="/team-project/assets/sprite-a6dd6f17.svg#icon-down_chevron"></use>
+                            </svg>
+                    </div>
+                    <div class="accordion-content" id="collapseThree" style="display: none;">
+                        <p>Merge Cove is family-friendly and suitable for all ages.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header" id="headingFour">
+                        <h3>How do I earn more coins?</h3>
+                        <span class="chevron">
+                            <svg class="icon-chevron">
+                                <use href="/team-project/assets/sprite-a6dd6f17.svg#icon-down_chevron"></use>
+                            </svg>
+                    </div>
+                    <div class="accordion-content" id="collapseFour" style="display: none;">
+                        <p>Coins can be earned through completing levels, quests,
+and special events.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header" id="headingFive">
+                        <h3>Are there updates with new content?</h3>
+                        <span class="chevron">
+                            <svg class="icon-chevron">
+                                <use href="/team-project/assets/sprite-a6dd6f17.svg#icon-down_chevron"></use>
+                            </svg>
+                    </div>
+                    <div class="accordion-content" id="collapseFive" style="display: none;">
+                        <p>Yes, we frequently update the game with new levels, items,
+and features.</p>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+            </div>
+
+            </div>
+         </section>
+
+         <section class="gallery container" id="gallery">
+
+
+
+           <picture class="flag-blue flag-cont">
+        <source media="(max-width: 1199px)" srcset="/team-project/assets/title_p6-d782d64d.png ">
+        <source media="(min-width: 1200px)" srcset="/team-project/assets/title_p6-d782d64d.png ">
+        <img src="/team-project/assets/purple-flag-e92b2163.png" alt="blueflag">
+      </picture>
+
+         <div class="swiper-container mySwiper2">
+             <div class="swiper-wrapper">
+                 <div class="swiper-slide">
+                     <picture>
+                         <source media="(max-width: 320px)" srcset="/team-project/assets/gal_1-2523bfd5.png ">
+                         <source media="(min-width: 1200px)" srcset="/team-project/assets/image1-ef3e19eb.png ">
+                         <img src="/team-project/assets/gal_1-2523bfd5.png" alt="Image 1">
+                     </picture>
+                 </div>
+                 <div class="swiper-slide">
+                     <picture>
+                         <source media="(max-width: 320px)" srcset="/team-project/assets/gal_2-f05d541c.png ">
+                         <source media="(min-width: 1200px)" srcset="/team-project/assets/pick_2-13c3f0a4.png ">
+                         <img src="/team-project/assets/gal_2-f05d541c.png" alt="Image 2">
+                     </picture>
+                 </div>
+                 <div class="swiper-slide">
+                     <picture>
+                         <source media="(max-width: 320px)" srcset="/team-project/assets/gal_3-b387f2e0.png ">
+                         <source media="(min-width: 1200px)" srcset="/team-project/assets/image2-a8107198.png ">
+                         <img src="/team-project/assets/gal_3-b387f2e0.png" alt="Image 3">
+                     </picture>
+                 </div>
+                 <div class="swiper-slide">
+                     <picture>
+                         <source media="(max-width: 320px)" srcset="/team-project/assets/gal_4-70418473.png ">
+                         <source media="(min-width: 1200px)" srcset="/team-project/assets/image4-a056364e.png ">
+                         <img src="/team-project/assets/gal_4-70418473.png" alt="Image 4">
+                     </picture>
+                 </div>
+                 <div class="swiper-slide">
+                     <picture>
+                         <source media="(max-width: 320px)" srcset="/team-project/assets/gal5-521e9991.png ">
+                         <source media="(min-width: 1200px)" srcset="/team-project/assets/pick_5-695dc642.png ">
+                          <img src="/team-project/assets/gal5-521e9991.png" alt="Image 4">
+                     </picture>
+                 </div>
+             </div>
+             <div class="navigation-container"></div>
+                <div class="custom-navigation howtoplay-nav">
+                    <button class="nav-prev howtoplay-prev">
+                        <svg class="icon-chevron">
+                            <use href="/team-project/assets/sprite-a6dd6f17.svg#icon-left_chevron"></use>
+                        </svg>
+                    </button>
+                    <button class="nav-next howtoplay-next">
+                        <svg class="icon-chevron">
+                            <use href="/team-project/assets/sprite-a6dd6f17.svg#icon-right_chevron"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+<!-- <div class="custom-navigation gallery-nav">
+     <div class="custom-navigation">
+            <button class="nav-prev">
+                <svg class="icon-chevron">
+                    <use href="./img/sprite.svg#icon-left_chevron"></use>
+                </svg>
+            </button>
+            <button class="nav-next">
+                <svg class="icon-chevron">
+                    <use href="./img/sprite.svg#icon-right_chevron"></use>
+                </svg>
+            </button>
+        </div>
+</div> -->
+</div>
+         </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!---<script src="./js//swiper.js"></script>-->
+</body>
+</html>
+    <!--<footer class="footer">
+  <div class="footer-content">
+    <img
+      class="header-logo"
+      src="./img/logo-s.png"
+      alt="logo"
+      width="68"
+      height="48"
+    />
+
+    <span
+      >©2024 | <a href="#">adventurehubquest.com</a> |
+      <a href="#">All rights reserved</a></span
+    >
+    <div class="footer-links">
+      <a href="./privacy.html">Privacy Policy</a> |
+      <a href="./terms.html">Terms and Conditions</a>
+    </div>
+  </div>
+</footer>
+----->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="./privacy.html" class="footer-link">Privacy Policy</a>
+    <span>|</span>
+    <a href="./terms.html" class="footer-link">Terms and Conditions</a>
+  </div>
+
+  <div class="footer-copyright">
+    <p>
+      ©2024
+      <a href="https://adventurehubquest.com" class="footer-link-adress"
+        >adventurehubquest.com</a
+      >
+    </p>
+    <p>All rights reserved</p>
+  </div>
+
+  <div class="footer-logo">
+    <img src="/team-project/assets/logo-s-6fd8e5d3.png" alt="Cove Merge logo" />
+  </div>
+</footer>
+
+    <section>
+      <!-- Path to images as from index.html file -->
+      <img src="./img/javascript.svg" alt="" />
+    </section>
+
+    <!-- Loads the specified .html file -->
+
+    
+    <!--<script type="module" src="./js/menu.js"></script>-->
+  </body>
+</html>
