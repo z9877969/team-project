@@ -20,15 +20,24 @@ body {
   flex-direction: column;
 }
 
-.features {
-  background-image: url('../img/Backgrounds/features-mobile.png'),
-    url('../img/backgroundparts/wave_transition_p3-mob.png');
-  background-size: cover, 100%;
+/*.features {
+  background-image: /*url('../img/Backgrounds/features-mobile.png'), url('../img/backgroundparts/wave_transition_p3-mob.png');
+  background-size: 320px;
   background-repeat: no-repeat;
-  background-size: cover, bottom;
+  background-position: bottom;
   padding-bottom: 40px;
+  margin-bottom: -1px;
 }
-
+*/
+.features {
+  background: url('../img/backgroundparts/wave_transition_p3-mob.png') no-repeat
+      bottom,
+    linear-gradient(180deg, rgba(4, 111, 160, 1) 0%, rgba(16, 172, 231, 1) 100%);
+  background-size: 320px, cover;
+  margin-top: -1px;
+  padding-bottom: 48px;
+}
+/*
 .howtoplay {
   background-color: #2dc0f6;
   background-image: url('../img/Backgrounds/howtoplay-mobile.png'),
@@ -39,7 +48,18 @@ body {
   padding-bottom: 40px;
   background-size: cover;
 }
-
+*/
+.howtoplay {
+  background-color: #2dc0f6; /* Колір фону */
+  background-image: url('../img/Backgrounds/howtoplay-mobile.png'),
+    url('../img/backgroundparts/wave_transition_p4-mob.png');
+  background-size: cover, 320px;
+  background-repeat: no-repeat;
+  background-position: center, bottom;
+  margin-bottom: -1px;
+  margin-top: -2px;
+  padding-bottom: 48px;
+}
 .faq {
   background-image: url('../img/Backgrounds/faq-mobile.png'),
     radial-gradient(circle, rgba(4, 111, 160, 1) 0%, rgba(16, 172, 231, 1) 100%);
@@ -323,16 +343,16 @@ body {
 
 @media (min-width: 1200px) {
   .features {
-    background: rgb(4, 111, 160);
-    background: linear-gradient(
-      100deg,
-      rgba(4, 111, 160, 1) 0%,
-      rgba(16, 172, 231, 1) 100%
-    );
-    background-image: url('../img/backgroundparts/wave_transition_p3.png');
-    background-size: cover, 1200px;
-    background-position: center, bottom;
-    background-repeat: no-repeat;
+    background: url('../img/backgroundparts/wave_transition_p3.png') no-repeat
+        bottom,
+      linear-gradient(
+        180deg,
+        rgba(4, 111, 160, 1) 0%,
+        rgba(16, 172, 231, 1) 100%
+      );
+
+    background-size: 1200px, cover;
+    margin-top: -1px;
   }
 
   .howtoplay {
@@ -341,6 +361,7 @@ body {
     background-size: cover, 1200px;
     background-repeat: no-repeat;
     background-position: center, bottom;
+    margin-bottom: -1px;
   }
 
   .faq {

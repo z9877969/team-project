@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
       type: 'progressbar',
     },
     navigation: {
-      nextEl: '.features-next',
-      prevEl: '.features-prev',
+      nextEl: '.howtoplay-next',
+      prevEl: '.howtoplay-prev',
     },
     breakpoints: {
       1200: {
